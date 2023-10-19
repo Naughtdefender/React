@@ -20,7 +20,11 @@
   padding: 10px;
   margin: 10px;
   outline: none;
-  color: black;
+  color: #c94d0f;
+}
+.logo:hover {
+  cursor: pointer;
+  color: white;
 }
 .nav-list {
   display: flex;

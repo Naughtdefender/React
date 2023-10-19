@@ -3,7 +3,7 @@
   "name": "react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
@@ -22,11 +22,13 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "babel-plugin-macros": "^3.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.17.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.15",
     "babel-plugin-transform-remove-console": "^6.9.4",
+    "gh-pages": "^6.0.0",
     "parcel": "^2.9.3",
     "process": "^0.11.10"
   },

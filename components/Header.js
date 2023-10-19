@@ -1,7 +1,7 @@
 import cart from "../assets/img/cart.png";
 import { useState } from "react";
 import FoodVillaLogo from "../assets/img/logo.js";
-
+import { Link } from "react-router-dom";
 const loggedInUser = function (log) {
   //API Call to check Authentication
   return log;
@@ -12,24 +12,24 @@ const Header = () => {
   return (
     <>
       <nav id="navbar">
-        <a href="/" className="logo">
+        <Link to="/" className="logo">
           {/* <img src={logo} alt="Logo" /> */}
           <FoodVillaLogo />
-        </a>
+        </Link>
         <ul className="nav-list">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="about">About us</a>
+            <Link to="about">About us</Link>
           </li>
           <li>
-            <a href="contact">Contact us</a>
+            <Link to="contact">Contact us</Link>
           </li>
           <li>
-            <a href="cart" className="cart">
+            <Link to="cart" className="cart">
               <img src={cart} alt="cart" />
-            </a>
+            </Link>
           </li>
           <button
             onClick={() => setisLoggedIn(isLoggedIn === true ? false : true)}
