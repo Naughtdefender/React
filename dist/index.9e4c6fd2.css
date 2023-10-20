@@ -165,6 +165,10 @@
   display: flex;
 }
 
+.restaurant-card a {
+  text-decoration: none;
+}
+
 #footer {
   color: #fff;
   text-align: center;
@@ -222,6 +226,38 @@
   margin: 13px 20px 13px 5px;
   list-style-type: none;
   position: relative;
+}
+
+.restaurantInfo {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.restaurantMenu_container {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.restaurantMenu_container h1 {
+  color: var(--primary-color);
+}
+
+.restaurantMenu {
+  border: 1px solid gray;
+  border-radius: 20px;
+  flex-direction: column;
+  margin: 30px;
+  padding: 10px;
+  list-style-type: none;
+  display: flex;
+}
+
+.restaurantMenu li {
+  justify-content: space-between;
+  display: flex;
 }
 
 @keyframes animation {

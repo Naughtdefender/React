@@ -2,6 +2,8 @@ import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { BtnLogo } from "../assets/img/logo.js";
+import { Link } from "react-router-dom";
+
 console.log("render");
 function filterData(text, resData) {
   const filteredData = resData.filter((res) =>
@@ -73,7 +75,13 @@ const Body = () => {
           ) : (
             filteredRestaurants.map((restaurant) => {
               return (
-                <RestaurantCard {...restaurant.info} key={restaurant.info.id} />
+                <Link to={"/restaurant/" + restaurant.info.id}>
+                  {" "}
+                  <RestaurantCard
+                    {...restaurant.info}
+                    key={restaurant.info.id}
+                  />
+                </Link>
               );
             })
           )}
