@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -8,10 +8,12 @@ import About from "./components/about.js";
 import Error from "./components/error";
 import Contact from "./components/contact";
 import RestaurantMenu from "./components/RestaurantMenu";
+import Profile from "./components/ProficeClass";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const AppLayout = () => {
+  console.log(useState());
   return (
     <>
       <Header />
@@ -34,6 +36,12 @@ const appRouter = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+        children: [
+          {
+            path: "profile",
+            element: <Profile />,
+          },
+        ],
       },
       {
         path: "/contact",

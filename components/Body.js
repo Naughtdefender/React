@@ -3,16 +3,15 @@ import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { BtnLogo } from "../assets/img/logo.js";
 import { Link } from "react-router-dom";
-
-console.log("render");
-function filterData(text, resData) {
-  const filteredData = resData.filter((res) =>
-    res?.info?.name?.toLowerCase().includes(text.toLowerCase())
-  );
-  return filteredData;
-}
-
+import { swiggyURLRishikesh } from "../config";
+import Restaurants from "./restaurants";
 const Body = () => {
+  function filterData(text, resData) {
+    const filteredData = resData.filter((res) =>
+      res?.info?.name?.toLowerCase().includes(text.toLowerCase())
+    );
+    return filteredData;
+  }
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
@@ -21,21 +20,26 @@ const Body = () => {
     setFilteredRestaurants(data);
   };
 
-  const swiggyURLRishikesh =
-    "https://www.swiggy.com/dapi/restaurants/list/v5?lat=30.0869281&lng=78.2676116&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+  //imported Restaurants functional component that fetch fetch restaurants data from swiggy API and adds restaurants in body
 
-  useEffect(() => {
-    //API CALL
-    getRestaurants(swiggyURLRishikesh);
-  }, []);
-  async function getRestaurants(url) {
-    const data = await fetch(url);
-    const json = await data.json();
-    const restaurantList = await json?.data?.cards[5]?.card?.card?.gridElements
-      ?.infoWithStyle?.restaurants;
-    setAllRestaurants(restaurantList);
-    setFilteredRestaurants(restaurantList);
-  }
+  Restaurants({
+    url: swiggyURLRishikesh,
+    setFilteredRestaurant: setFilteredRestaurants,
+    setAllRestaurant: setAllRestaurants,
+  });
+
+  // useEffect(() => {
+  //   //API CALL
+  //   getRestaurants(swiggyURLRishikesh);
+  // }, []);
+  // async function getRestaurants(url) {
+  //   const data = await fetch(url);
+  //   const json = await data.json();
+  //   const restaurantList = await json?.data?.cards[5]?.card?.card?.gridElements
+  //     ?.infoWithStyle?.restaurants;
+  //   setAllRestaurants(restaurantList);
+  //   setFilteredRestaurants(restaurantList);
+  // }
 
   //Conditional Rendering
   //if Restaurants are not there => dont render anything (Early Return)
@@ -75,12 +79,12 @@ const Body = () => {
           ) : (
             filteredRestaurants.map((restaurant) => {
               return (
-                <Link to={"/restaurant/" + restaurant.info.id}>
+                <Link
+                  to={"/restaurant/" + restaurant?.info?.id}
+                  key={restaurant.info.id}
+                >
                   {" "}
-                  <RestaurantCard
-                    {...restaurant.info}
-                    key={restaurant.info.id}
-                  />
+                  <RestaurantCard {...restaurant.info} />
                 </Link>
               );
             })

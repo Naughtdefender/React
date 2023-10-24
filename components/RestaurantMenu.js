@@ -15,13 +15,8 @@ const RestaurantMenu = function () {
         newID.id +
         "&catalog_qa=undefined&submitAction=ENTER"
     );
-    console.log(
-      "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.0869281&lng=78.2676116&restaurantId=" +
-        newID.id +
-        "&catalog_qa=undefined&submitAction=ENTER"
-    );
+
     const json = await data.json();
-    console.log(json);
     setRestaurant(json.data.cards[0].card.card.info);
     const resMenuList =
       json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards.map(
@@ -31,7 +26,6 @@ const RestaurantMenu = function () {
           </li>
         )
       );
-    console.log(resMenuList);
     setResMenu(resMenuList);
   }
   return !restaurant ? (
@@ -41,14 +35,14 @@ const RestaurantMenu = function () {
       <div className="card">
         <img
           className=""
-          src={IMG_URL_CDN + restaurant.cloudinaryImageId}
+          src={IMG_URL_CDN + restaurant?.cloudinaryImageId}
           alt="restaurant image"
         />
-        <h4>{restaurant.name}</h4>
-        <h4>{restaurant.area}</h4>
-        <h4>{restaurant.city}</h4>
-        <h4>{restaurant.avgRating} ⭐</h4>
-        <h4>{restaurant.costForTwoMessage}</h4>
+        <h4>{restaurant?.name}</h4>
+        <h4>{restaurant?.area}</h4>
+        <h4>{restaurant?.city}</h4>
+        <h4>{restaurant?.avgRating} ⭐</h4>
+        <h4>{restaurant?.costForTwoMessage}</h4>
       </div>
       <div className="restaurantMenu_container">
         <h1>Menu</h1>

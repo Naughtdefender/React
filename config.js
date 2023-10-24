@@ -4181,4 +4181,7 @@ const restaurantsList1 = [
   },
 ];
 
+export const swiggyURLRishikesh =
+  "https://www.swiggy.com/dapi/restaurants/list/v5?lat=30.0869281&lng=78.2676116&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+
 export const newRestaurantList = [...restaurantsList, ...restaurantsList1];
