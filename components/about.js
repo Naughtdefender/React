@@ -1,4 +1,3 @@
-import { Outlet } from "react-router-dom";
 import Profile from "./ProficeClass";
 import { Component } from "react";
 const About2 = function () {
@@ -18,6 +17,12 @@ class About extends Component {
   }
   componentDidMount() {
     console.log("Parent - ComponentDidMount");
+  }
+  componentDidUpdate() {
+    console.log("componentDidUpdate");
+  }
+  componentWillUnmount() {
+    console.log("componentWillUnmount");
   }
   render() {
     console.log("Parent - Render");
