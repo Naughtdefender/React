@@ -4,14 +4,10 @@ import Shimmer from "./Shimmer";
 import { BtnLogo } from "../assets/img/logo.js";
 import { Link } from "react-router-dom";
 import { swiggyURLRishikesh } from "../config";
-import Restaurants from "./restaurants";
+import { filterData } from "../utils/helper";
+import useOnline from "../utils/useOnline";
+
 const Body = () => {
-  function filterData(text, resData) {
-    const filteredData = resData.filter((res) =>
-      res?.info?.name?.toLowerCase().includes(text.toLowerCase())
-    );
-    return filteredData;
-  }
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
@@ -20,29 +16,28 @@ const Body = () => {
     setFilteredRestaurants(data);
   };
 
-  //imported Restaurants functional component that fetch fetch restaurants data from swiggy API and adds restaurants in body
-
-  Restaurants({
-    url: swiggyURLRishikesh,
-    setFilteredRestaurant: setFilteredRestaurants,
-    setAllRestaurant: setAllRestaurants,
-  });
-
-  // useEffect(() => {
-  //   //API CALL
-  //   getRestaurants(swiggyURLRishikesh);
-  // }, []);
-  // async function getRestaurants(url) {
-  //   const data = await fetch(url);
-  //   const json = await data.json();
-  //   const restaurantList = await json?.data?.cards[5]?.card?.card?.gridElements
-  //     ?.infoWithStyle?.restaurants;
-  //   setAllRestaurants(restaurantList);
-  //   setFilteredRestaurants(restaurantList);
-  // }
+  useEffect(() => {
+    //API CALL
+    getRestaurants(swiggyURLRishikesh);
+  }, []);
+  async function getRestaurants(url) {
+    const data = await fetch(url);
+    const json = await data.json();
+    const restaurantList = await json?.data?.cards[5]?.card?.card?.gridElements
+      ?.infoWithStyle?.restaurants;
+    setAllRestaurants(restaurantList);
+    setFilteredRestaurants(restaurantList);
+  }
 
   //Conditional Rendering
   //if Restaurants are not there => dont render anything (Early Return)
+
+  //checking Internet connection
+  const online = useOnline();
+  if (!online) {
+    return <h2>🔴 Check internet connection</h2>;
+  }
+
   const count = 10;
   if (!allRestaurants) return null;
   //If restaurant is empty => render Shimmer UI

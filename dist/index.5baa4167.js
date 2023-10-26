@@ -34022,42 +34022,41 @@ var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _logoJs = require("../assets/img/logo.js");
 var _reactRouterDom = require("react-router-dom");
 var _config = require("../config");
-var _restaurants = require("./restaurants");
-var _restaurantsDefault = parcelHelpers.interopDefault(_restaurants);
+var _helper = require("../utils/helper");
+var _useOnline = require("../utils/useOnline");
+var _useOnlineDefault = parcelHelpers.interopDefault(_useOnline);
 var _s = $RefreshSig$();
 const Body = ()=>{
     _s();
-    function filterData(text, resData) {
-        const filteredData = resData.filter((res)=>res?.info?.name?.toLowerCase().includes(text.toLowerCase()));
-        return filteredData;
-    }
     const [allRestaurants, setAllRestaurants] = (0, _react.useState)([]);
     const [filteredRestaurants, setFilteredRestaurants] = (0, _react.useState)([]);
     const [searchText, setSearchText] = (0, _react.useState)("");
     const searchAlgo = function() {
-        const data = filterData(searchText, allRestaurants);
+        const data = (0, _helper.filterData)(searchText, allRestaurants);
         setFilteredRestaurants(data);
     };
-    //imported Restaurants functional component that fetch fetch restaurants data from swiggy API and adds restaurants in body
-    (0, _restaurantsDefault.default)({
-        url: (0, _config.swiggyURLRishikesh),
-        setFilteredRestaurant: setFilteredRestaurants,
-        setAllRestaurant: setAllRestaurants
-    });
-    // useEffect(() => {
-    //   //API CALL
-    //   getRestaurants(swiggyURLRishikesh);
-    // }, []);
-    // async function getRestaurants(url) {
-    //   const data = await fetch(url);
-    //   const json = await data.json();
-    //   const restaurantList = await json?.data?.cards[5]?.card?.card?.gridElements
-    //     ?.infoWithStyle?.restaurants;
-    //   setAllRestaurants(restaurantList);
-    //   setFilteredRestaurants(restaurantList);
-    // }
+    (0, _react.useEffect)(()=>{
+        //API CALL
+        getRestaurants((0, _config.swiggyURLRishikesh));
+    }, []);
+    async function getRestaurants(url) {
+        const data = await fetch(url);
+        const json = await data.json();
+        const restaurantList = await json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+        setAllRestaurants(restaurantList);
+        setFilteredRestaurants(restaurantList);
+    }
     //Conditional Rendering
     //if Restaurants are not there => dont render anything (Early Return)
+    //checking Internet connection
+    const online = (0, _useOnlineDefault.default)();
+    if (!online) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+        children: "\uD83D\uDD34 Check internet connection"
+    }, void 0, false, {
+        fileName: "components/Body.js",
+        lineNumber: 35,
+        columnNumber: 12
+    }, undefined);
     const count = 10;
     if (!allRestaurants) return null;
     //If restaurant is empty => render Shimmer UI
@@ -34065,7 +34064,7 @@ const Body = ()=>{
         count: count
     }, void 0, false, {
         fileName: "components/Body.js",
-        lineNumber: 47,
+        lineNumber: 40,
         columnNumber: 41
     }, undefined) : //If restaurant has data => render actual data
     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -34086,7 +34085,7 @@ const Body = ()=>{
                         onChange: (e)=>setSearchText(e.target.value)
                     }, void 0, false, {
                         fileName: "components/Body.js",
-                        lineNumber: 54,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34095,18 +34094,18 @@ const Body = ()=>{
                         onClick: searchAlgo,
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _logoJs.BtnLogo), {}, void 0, false, {
                             fileName: "components/Body.js",
-                            lineNumber: 56,
+                            lineNumber: 49,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "components/Body.js",
-                        lineNumber: 55,
+                        lineNumber: 48,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "components/Body.js",
-                lineNumber: 50,
+                lineNumber: 43,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34121,7 +34120,7 @@ const Body = ()=>{
                         children: "No Restaurant match your search!!"
                     }, void 0, false, {
                         fileName: "components/Body.js",
-                        lineNumber: 61,
+                        lineNumber: 54,
                         columnNumber: 48
                     }, undefined) : filteredRestaurants.map((restaurant)=>{
                         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -34132,30 +34131,34 @@ const Body = ()=>{
                                     ...restaurant.info
                                 }, void 0, false, {
                                     fileName: "components/Body.js",
-                                    lineNumber: 69,
+                                    lineNumber: 62,
                                     columnNumber: 19
                                 }, undefined)
                             ]
                         }, restaurant.info.id, true, {
                             fileName: "components/Body.js",
-                            lineNumber: 67,
+                            lineNumber: 60,
                             columnNumber: 18
                         }, undefined);
                     })
                 }, void 0, false, {
                     fileName: "components/Body.js",
-                    lineNumber: 60,
+                    lineNumber: 53,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "components/Body.js",
-                lineNumber: 59,
+                lineNumber: 52,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Body, "bRorUJSY14TJh4iWSJNVCqRKWeE=");
+_s(Body, "hT/JwvtX6o0N92wikF86BTQ5V8M=", false, function() {
+    return [
+        (0, _useOnlineDefault.default)
+    ];
+});
 _c = Body;
 exports.default = Body;
 var _c;
@@ -34166,7 +34169,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./RestaurantCard":"1xTki","react":"21dqq","./Shimmer":"6a0mH","../assets/img/logo.js":"iuRxb","react-router-dom":"9xmpe","../config":"bSr8D","./restaurants":"lmvD8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1xTki":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./RestaurantCard":"1xTki","react":"21dqq","./Shimmer":"6a0mH","../assets/img/logo.js":"iuRxb","react-router-dom":"9xmpe","../config":"bSr8D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/helper":"9L4Sx","../utils/useOnline":"bc9W5"}],"1xTki":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$4b77 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38684,26 +38687,51 @@ $RefreshReg$(_c1, "Shimmer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lmvD8":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9L4Sx":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-const Restaurants = function({ url, setFilteredRestaurant, setAllRestaurant }) {
-    async function fetchedRestaurants(url) {
-        const data = await fetch(url);
-        const json = await data.json();
-        const allRestaurant = await json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-        setFilteredRestaurant(allRestaurant);
-        setAllRestaurant(allRestaurant);
-        return allRestaurant;
-    }
-    fetchedRestaurants(url);
-};
-_c = Restaurants;
-exports.default = Restaurants;
-var _c;
-$RefreshReg$(_c, "Restaurants");
+parcelHelpers.export(exports, "filterData", ()=>filterData);
+function filterData(text, resData) {
+    const filteredData = resData.filter((res)=>res?.info?.name?.toLowerCase().includes(text.toLowerCase()));
+    return filteredData;
+}
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"b0Vsn":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bc9W5":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9de7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9de7.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _s = $RefreshSig$();
+const useOnline = ()=>{
+    _s();
+    const [isOnline, setIsOnline] = (0, _react.useState)(true);
+    (0, _react.useEffect)(()=>{
+        const handleOnline = ()=>setIsOnline(true);
+        const handleOffline = ()=>setIsOnline(false);
+        window.addEventListener("online", handleOnline);
+        window.addEventListener("offline", handleOffline);
+        return ()=>{
+            console.log("unmounting");
+            window.removeEventListener("online", handleOnline);
+            window.removeEventListener("offline", handleOffline);
+        };
+    }, []);
+    return isOnline;
+};
+_s(useOnline, "mRBquyBAMh60D2Q5WI/A8/L/7j4=");
+exports.default = useOnline;
+
+  $parcel$ReactRefreshHelpers$9de7.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b0Vsn":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$860b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
