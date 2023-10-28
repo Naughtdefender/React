@@ -13,7 +13,7 @@ const RestaurantCard = ({
       <h4>{name}</h4>
       <h4>{"⭐" + avgRatingString}</h4>
       <p>{cuisines.join(", ")}</p>
-      <h4>{sla.lastMileTravelString}</h4>
+      <h4>{sla?.lastMileTravelString}</h4>
     </div>
   );
 };

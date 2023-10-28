@@ -2,15 +2,12 @@ import cart from "../assets/img/cart.png";
 import { useState } from "react";
 import FoodVillaLogo from "../assets/img/logo.js";
 import { Link } from "react-router-dom";
-
-const loggedInUser = function (log) {
-  //API Call to check Authentication
-  return log;
-};
+import useOnline from "../utils/useOnline";
+import useAuth from "../utils/useAuth";
 
 const Header = () => {
-  const [isLoggedIn, setisLoggedIn] = useState(true);
-
+  const [logIn, toggleLogIn] = useAuth(false);
+  const isOnline = useOnline();
   return (
     <>
       <nav id="navbar">
@@ -21,23 +18,30 @@ const Header = () => {
           <Link to="/">
             <li>Home</li>
           </Link>
-          <Link to="about">
+          <Link to="/about">
             <li>About us</li>
           </Link>
-          <Link to="contact">
+          <Link to="/contact">
             <li>Contact us</li>
           </Link>
+          <Link to="/instamart">
+            <li>Instamart</li>
+          </Link>
 
-          <Link to="cart" className="cart">
+          <Link to="/cart" className="cart">
             <li>
               <img src={cart} alt="cart" />
             </li>
           </Link>
-          <button
-            onClick={() => setisLoggedIn(isLoggedIn === true ? false : true)}
-            className="btn-log"
+          <span
+            className="online_status"
+            style={{ color: isOnline ? "green" : "red" }}
           >
-            Log{loggedInUser(isLoggedIn) ? "In" : "Out"}
+            {isOnline ? "🟢nline" : "🔴ffline"}
+          </span>
+          <button onClick={toggleLogIn} className="btn-log">
+            Log{logIn ? "In" : "Out"}
+            {console.log(logIn)}
           </button>
         </ul>
       </nav>

@@ -22,13 +22,13 @@ class Profile extends React.Component {
   }
   render() {
     console.log("Child - render");
-    const { userInfo } = this.state;
+    const { userInfo } = this?.state;
     return (
       <div>
         <img src={userInfo.avatar_url} alt="userImage" />
         <h2>This is Profile Class.</h2>
-        <h2>My name is {userInfo.name}</h2>
-        <h2>Location - {userInfo.location}</h2>
+        <h2>My name is {userInfo?.name}</h2>
+        <h2>Location - {userInfo?.location}</h2>
       </div>
     );
   }

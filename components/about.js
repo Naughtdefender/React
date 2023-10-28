@@ -1,3 +1,4 @@
+import useOnline from "../utils/useOnline";
 import Profile from "./ProficeClass";
 import { Component } from "react";
 const About2 = function () {
@@ -26,6 +27,7 @@ class About extends Component {
   }
   render() {
     console.log("Parent - Render");
+
     return (
       <div>
         <h1>This is About Page</h1>

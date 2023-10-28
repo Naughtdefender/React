@@ -5,7 +5,6 @@ import { BtnLogo } from "../assets/img/logo.js";
 import { Link } from "react-router-dom";
 import { swiggyURLRishikesh } from "../config";
 import { filterData } from "../utils/helper";
-import useOnline from "../utils/useOnline";
 
 const Body = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);
@@ -23,8 +22,10 @@ const Body = () => {
   async function getRestaurants(url) {
     const data = await fetch(url);
     const json = await data.json();
-    const restaurantList = await json?.data?.cards[5]?.card?.card?.gridElements
-      ?.infoWithStyle?.restaurants;
+    console.log(json);
+    const restaurantList =
+      json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants;
     setAllRestaurants(restaurantList);
     setFilteredRestaurants(restaurantList);
   }
@@ -33,10 +34,10 @@ const Body = () => {
   //if Restaurants are not there => dont render anything (Early Return)
 
   //checking Internet connection
-  const online = useOnline();
-  if (!online) {
-    return <h2>🔴 Check internet connection</h2>;
-  }
+  // const online = useOnline();
+  // if (!online) {
+  //   return <h2>🔴 Check internet connection</h2>;
+  // }
 
   const count = 10;
   if (!allRestaurants) return null;
@@ -59,7 +60,7 @@ const Body = () => {
           className="search-container"
           value={searchText}
           placeholder="search"
-          onChange={(e) => setSearchText(e.target.value)}
+          onChange={(e) => setSearchText(e?.target?.value)}
         />
         <button type="button" id="search-btn" onClick={searchAlgo}>
           <BtnLogo />
@@ -76,10 +77,10 @@ const Body = () => {
               return (
                 <Link
                   to={"/restaurant/" + restaurant?.info?.id}
-                  key={restaurant.info.id}
+                  key={restaurant?.info?.id}
                 >
                   {" "}
-                  <RestaurantCard {...restaurant.info} />
+                  <RestaurantCard {...restaurant?.info} />
                 </Link>
               );
             })

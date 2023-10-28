@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer";
 import { IMG_URL_CDN } from "../config";
 import useRestaurant, { useRestaurantMenu } from "../utils/useRestaurant";
+
 const RestaurantMenu = function () {
   const { id } = useParams();
   const url =
@@ -10,6 +11,7 @@ const RestaurantMenu = function () {
     "&catalog_qa=undefined&submitAction=ENTER";
   const restaurant = useRestaurant(url);
   const restaurantMenu = useRestaurantMenu(url);
+
   return !restaurant ? (
     <Shimmer />
   ) : (

@@ -127,6 +127,12 @@
   cursor: pointer;
 }
 
+.online_status {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 .restaurant-container {
   max-width: 100%;
   min-height: 62vh;
