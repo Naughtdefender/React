@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"37SKV":[function(require,module,exports) {
+})({"gzT0l":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "d79ab74f388cf604";
+module.bundle.HMR_BUNDLE_ID = "e12554bb0762395e";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -594,111 +594,60 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"6d18d6bd340e7473":"786KC","74ad5ea14201648c":"1dldy"}],"hGILx":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$266e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"6d18d6bd340e7473":"786KC","74ad5ea14201648c":"1dldy"}],"gB4Fs":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8238 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$266e.prelude(module);
+$parcel$ReactRefreshHelpers$8238.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _useOnline = require("../utils/useOnline");
-var _useOnlineDefault = parcelHelpers.interopDefault(_useOnline);
-var _proficeClass = require("./ProficeClass");
-var _proficeClassDefault = parcelHelpers.interopDefault(_proficeClass);
-var _react = require("react");
-const About2 = function() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+const Instamart = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "This is About Page"
+                style: {
+                    margin: "10px",
+                    display: "flex",
+                    justifyContent: "center",
+                    border: "1px solid red"
+                },
+                children: "Instamart"
             }, void 0, false, {
-                fileName: "components/About.js",
-                lineNumber: 6,
-                columnNumber: 7
-            }, this),
+                fileName: "src/components/Instamart.js",
+                lineNumber: 2,
+                columnNumber: 5
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Happy to see you here"
+                style: {
+                    margin: "10px",
+                    display: "flex",
+                    justifyContent: "center",
+                    border: "1px solid red"
+                },
+                children: "100s of Content"
             }, void 0, false, {
-                fileName: "components/About.js",
-                lineNumber: 7,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _proficeClassDefault.default), {
-                name: "Kshitiz",
-                dob: "13/04/2000"
-            }, void 0, false, {
-                fileName: "components/About.js",
-                lineNumber: 8,
-                columnNumber: 7
-            }, this)
+                fileName: "src/components/Instamart.js",
+                lineNumber: 10,
+                columnNumber: 5
+            }, undefined)
         ]
     }, void 0, true, {
-        fileName: "components/About.js",
-        lineNumber: 5,
-        columnNumber: 10
-    }, this);
-};
-_c = About2;
-class About extends (0, _react.Component) {
-    constructor(props){
-        super(props);
-        console.log("Parent - Constructor");
-    }
-    componentDidMount() {
-        console.log("Parent - ComponentDidMount");
-    }
-    componentDidUpdate() {
-        console.log("componentDidUpdate");
-    }
-    componentWillUnmount() {
-        console.log("componentWillUnmount");
-    }
-    render() {
-        console.log("Parent - Render");
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "This is About Page"
-                }, void 0, false, {
-                    fileName: "components/About.js",
-                    lineNumber: 28,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                    children: "Happy to see you here"
-                }, void 0, false, {
-                    fileName: "components/About.js",
-                    lineNumber: 29,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _proficeClassDefault.default), {
-                    name: "Kshitiz",
-                    dob: "13/04/2000"
-                }, void 0, false, {
-                    fileName: "components/About.js",
-                    lineNumber: 30,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "components/About.js",
-            lineNumber: 27,
-            columnNumber: 12
-        }, this);
-    }
-}
-exports.default = About;
+        fileName: "src/components/Instamart.js",
+        lineNumber: 1,
+        columnNumber: 25
+    }, undefined);
+_c = Instamart;
+exports.default = Instamart;
 var _c;
-$RefreshReg$(_c, "About2");
+$RefreshReg$(_c, "Instamart");
 
-  $parcel$ReactRefreshHelpers$266e.postlude(module);
+  $parcel$ReactRefreshHelpers$8238.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../utils/useOnline":"bc9W5","./ProficeClass":"8PuIg","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["37SKV","1xC6H"], null, "parcelRequire77dd")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["gzT0l","1xC6H"], null, "parcelRequire77dd")
 
-//# sourceMappingURL=About.388cf604.js.map
+//# sourceMappingURL=Instamart.0762395e.js.map
