@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"gzT0l":[function(require,module,exports) {
+})({"3JV03":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -227,9 +227,15 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== "undefined") {
     var hostname = getHostname();
     var port = getPort();
     var protocol = HMR_SECURE || location.protocol == "https:" && !/localhost|127.0.0.1|0.0.0.0/.test(hostname) ? "wss" : "ws";
-    var ws = new WebSocket(protocol + "://" + hostname + (port ? ":" + port : "") + "/");
+    var ws;
+    try {
+        ws = new WebSocket(protocol + "://" + hostname + (port ? ":" + port : "") + "/");
+    } catch (err) {
+        if (err.message) console.error(err.message);
+        ws = {};
+    }
     // Web extension context
-    var extCtx = typeof chrome === "undefined" ? typeof browser === "undefined" ? null : browser : chrome;
+    var extCtx = typeof browser === "undefined" ? typeof chrome === "undefined" ? null : chrome : browser;
     // Safari doesn't support sourceURL in error stacks.
     // eval may also be disabled via CSP, so do a quick check.
     var supportsSourceURL = false;
@@ -293,7 +299,7 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== "undefined") {
         }
     };
     ws.onerror = function(e) {
-        console.error(e.message);
+        if (e.message) console.error(e.message);
     };
     ws.onclose = function() {
         console.warn("[parcel] \uD83D\uDEA8 Connection to the HMR server was lost");
@@ -303,7 +309,7 @@ function removeErrorOverlay() {
     var overlay = document.getElementById(OVERLAY_ID);
     if (overlay) {
         overlay.remove();
-        console.log("[parcel] ✨ Error resolved");
+        console.log("[parcel] \u2728 Error resolved");
     }
 }
 function createErrorOverlay(diagnostics) {
@@ -319,13 +325,13 @@ ${frame.code}`;
         errorHTML += `
       <div>
         <div style="font-size: 18px; font-weight: bold; margin-top: 20px;">
-          🚨 ${diagnostic.message}
+          \u{1F6A8} ${diagnostic.message}
         </div>
         <pre>${stack}</pre>
         <div>
           ${diagnostic.hints.map((hint)=>"<div>\uD83D\uDCA1 " + hint + "</div>").join("")}
         </div>
-        ${diagnostic.documentation ? `<div>📝 <a style="color: violet" href="${diagnostic.documentation}" target="_blank">Learn more</a></div>` : ""}
+        ${diagnostic.documentation ? `<div>\u{1F4DD} <a style="color: violet" href="${diagnostic.documentation}" target="_blank">Learn more</a></div>` : ""}
       </div>
     `;
     }
@@ -421,15 +427,10 @@ async function hmrApplyUpdates(assets) {
             let promises = assets.map((asset)=>{
                 var _hmrDownload;
                 return (_hmrDownload = hmrDownload(asset)) === null || _hmrDownload === void 0 ? void 0 : _hmrDownload.catch((err)=>{
-                    // Web extension bugfix for Chromium
-                    // https://bugs.chromium.org/p/chromium/issues/detail?id=1255412#c12
-                    if (extCtx && extCtx.runtime && extCtx.runtime.getManifest().manifest_version == 3) {
-                        if (typeof ServiceWorkerGlobalScope != "undefined" && global instanceof ServiceWorkerGlobalScope) {
-                            extCtx.runtime.reload();
-                            return;
-                        }
-                        asset.url = extCtx.runtime.getURL("/__parcel_hmr_proxy__?url=" + encodeURIComponent(asset.url + "?t=" + Date.now()));
-                        return hmrDownload(asset);
+                    // Web extension fix
+                    if (extCtx && extCtx.runtime && extCtx.runtime.getManifest().manifest_version == 3 && typeof ServiceWorkerGlobalScope != "undefined" && global instanceof ServiceWorkerGlobalScope) {
+                        extCtx.runtime.reload();
+                        return;
                     }
                     throw err;
                 });
@@ -607,12 +608,6 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Instamart = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                style: {
-                    margin: "10px",
-                    display: "flex",
-                    justifyContent: "center",
-                    border: "1px solid red"
-                },
                 children: "Instamart"
             }, void 0, false, {
                 fileName: "src/components/Instamart.js",
@@ -620,16 +615,10 @@ const Instamart = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                style: {
-                    margin: "10px",
-                    display: "flex",
-                    justifyContent: "center",
-                    border: "1px solid red"
-                },
                 children: "100s of Content"
             }, void 0, false, {
                 fileName: "src/components/Instamart.js",
-                lineNumber: 10,
+                lineNumber: 3,
                 columnNumber: 5
             }, undefined)
         ]
@@ -648,6 +637,6 @@ $RefreshReg$(_c, "Instamart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["gzT0l","1xC6H"], null, "parcelRequire77dd")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["3JV03","1xC6H"], null, "parcelRequire77dd")
 
 //# sourceMappingURL=Instamart.0762395e.js.map

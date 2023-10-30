@@ -1,9 +1,8 @@
 import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
-import { BtnLogo } from "../assets/img/logo.js";
 import { Link } from "react-router-dom";
-import { swiggyURLRishikesh } from "../config";
+import { swiggyURLRishikesh } from "../constants";
 import { filterData } from "../utils/helper";
 
 const Body = () => {
@@ -48,44 +47,46 @@ const Body = () => {
     //If restaurant has data => render actual data
     <>
       <form
-        className="search"
+        className="text-right mx-36 my-2"
         onSubmit={(e) => {
           e.preventDefault();
           searchAlgo();
         }}
       >
         <input
-          id="searchEng"
           type="text"
-          className="search-container"
+          className="focus:bg-green-50 placeholder:italic placeholder:text-green-600 bg-gray-50 rounded-md my-2 px-2 py-1"
           value={searchText}
           placeholder="search"
           onChange={(e) => setSearchText(e?.target?.value)}
         />
-        <button type="button" id="search-btn" onClick={searchAlgo}>
-          <BtnLogo />
+        <button
+          type="button"
+          className="bg-green-500 m-2 px-2 py-1 text-white rounded-md hover:bg-green-600"
+          onClick={searchAlgo}
+        >
+          Search
         </button>
       </form>
-      <div className="restaurant-container">
-        <div className="restaurant-card">
-          {filteredRestaurants?.length === 0 ? (
-            <h1 style={{ height: "48vh", margin: "auto" }}>
-              No Restaurant match your search!!
-            </h1>
-          ) : (
-            filteredRestaurants.map((restaurant) => {
-              return (
-                <Link
-                  to={"/restaurant/" + restaurant?.info?.id}
-                  key={restaurant?.info?.id}
-                >
-                  {" "}
-                  <RestaurantCard {...restaurant?.info} />
-                </Link>
-              );
-            })
-          )}
-        </div>
+
+      <div className="flex flex-wrap justify-center ">
+        {filteredRestaurants?.length === 0 ? (
+          <h1 style={{ height: "48vh", margin: "auto" }}>
+            No Restaurant match your search!!
+          </h1>
+        ) : (
+          filteredRestaurants.map((restaurant) => {
+            return (
+              <Link
+                to={"/restaurant/" + restaurant?.info?.id}
+                key={restaurant?.info?.id}
+              >
+                {" "}
+                <RestaurantCard {...restaurant?.info} />
+              </Link>
+            );
+          })
+        )}
       </div>
     </>
   );

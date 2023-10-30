@@ -1,4 +1,3 @@
-import useOnline from "../utils/useOnline";
 import Profile from "./ProficeClass";
 import { Component } from "react";
 const About2 = function () {

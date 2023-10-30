@@ -1,5 +1,3 @@
-import useOnline from "../utils/useOnline";
-
 const Contact = () => (
   <div>
     <h1>This is Contact page</h1>
