@@ -34348,7 +34348,7 @@ const RestaurantCard = ({ name, cloudinaryImageId, cuisines, avgRatingString, sl
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 src: (0, _constants.IMG_URL_CDN) + cloudinaryImageId,
-                className: "w-52 h-52 fill-white",
+                className: "w-52 h-52 ",
                 alt: "food gallery"
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
