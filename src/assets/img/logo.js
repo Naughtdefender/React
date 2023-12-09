@@ -11,7 +11,7 @@ export const BtnLogo = function () {
 export const FoodVillaLogo1 = () => {
   return (
     <svg
-      className=" mx-3 w-9 h-9"
+      className="mx-4 w-9 h-9"
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
       width="1280.000000pt"

@@ -15,7 +15,7 @@ const RestaurantMenu = function () {
   return !restaurant ? (
     <Shimmer />
   ) : (
-    <div className="restaurantInfo">
+    <div className="min-h-screen restaurantInfo">
       <div className="card">
         <img
           className=""

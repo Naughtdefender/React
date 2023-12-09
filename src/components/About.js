@@ -28,7 +28,7 @@ class About extends Component {
     console.log("Parent - Render");
 
     return (
-      <div>
+      <div className="min-h-screen">
         <h1>This is About Page</h1>
         <h2>Happy to see you here</h2>
         <Profile name={"Kshitiz"} dob={"13/04/2000"} />

@@ -6,20 +6,28 @@ const RestaurantCard = ({
   cuisines,
   avgRatingString,
   sla,
-}) => {
-  return (
-    <div className="m-5 p-2 w-56 shadow-lg">
-      <img
+}) => (
+  <>
+    <div className="m-10 transition-transform transform hover:scale-110x">
+      <div className=" h-auto  w-56">
+        <div
+          className="shadow-lg p-4 rounded-2xl bg-center bg-no-repeat bg-cover w-52 h-36 "
+          style={{
+            backgroundImage: `url(${IMG_URL_CDN + cloudinaryImageId})`,
+          }}
+        ></div>
+        {/* <img
         src={IMG_URL_CDN + cloudinaryImageId}
         className="w-52 h-52 "
-        alt="food gallery"
-      />
-      <h4 className="font-bold p-1 m-1 text-xl">{name}</h4>
-      <h4 className="p-1 m-1">{"⭐" + avgRatingString}</h4>
-      <p className="p-1 m-1">{cuisines.join(", ")}</p>
-      <h4 className="p-1 m-1">{sla?.lastMileTravelString}</h4>
+        alt="food gallery" /> */}
+
+        <h4 className="font-bold p-1 m-1 text-lg">{name}</h4>
+        <span className="m-1">&#11088;{avgRatingString} &bull;</span>
+        <span className="">{sla?.lastMileTravelString}</span>
+        <p className="p-1 m-1 truncate">{cuisines.join(", ")}</p>
+      </div>
     </div>
-  );
-};
+  </>
+);
 
 export default RestaurantCard;

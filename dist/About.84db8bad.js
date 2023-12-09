@@ -658,6 +658,7 @@ class About extends (0, _react.Component) {
     render() {
         console.log("Parent - Render");
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "min-h-screen",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     children: "This is About Page"
