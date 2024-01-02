@@ -2,6 +2,9 @@ export const IMG_URL_CDN =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
 export const swiggyURLRishikesh =
+  "https://www.swiggy.com/mapi/homepage/getCards?lat=30.1056329&lng=78.2953055";
+
+export const swiggyURLRishikesh1 =
   "https://www.swiggy.com/dapi/restaurants/list/v5?lat=30.0869281&lng=78.2676116&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
 export const restaurantsList = [

@@ -21,12 +21,15 @@ const Body = () => {
   async function getRestaurants(url) {
     const data = await fetch(url);
     const json = await data.json();
+    // const restaurantList =
+    //   json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle
+    //     ?.restaurants;
     console.log(json);
-    const restaurantList =
-      json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants;
-    setAllRestaurants(restaurantList);
-    setFilteredRestaurants(restaurantList);
+    const restaurantList1 = await json?.data?.success?.cards[1]?.gridWidget
+      ?.gridElements?.infoWithStyle?.restaurants;
+    console.log(restaurantList1);
+    setAllRestaurants(restaurantList1);
+    setFilteredRestaurants(restaurantList1);
   }
 
   //Conditional Rendering
