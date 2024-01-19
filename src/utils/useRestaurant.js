@@ -10,10 +10,10 @@ const useRestaurant = (url) => {
     const data = await fetch(url);
 
     const json = await data.json();
+    console.log(json);
 
-    const restaurantData = await json?.data?.cards[0]?.card?.card?.info;
-    const restaurantData1 = await json?.data?.cards[3]?.gridElements
-      ?.infoWithStyle?.restaurants?.info;
+    const restaurantData = json?.data?.cards[0]?.card?.card?.info;
+    console.log(restaurantData);
     setRestaurant(restaurantData);
   }
   return restaurant;
@@ -26,14 +26,14 @@ export const useRestaurantMenu = (url) => {
   async function getRestaurantinfo() {
     const data = await fetch(url);
     const json = await data.json();
-    const diggingInJSON =
-      json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card
+    const resMenu =
+      json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[4]?.card
         ?.card?.itemCards;
-    const diggingInJSON1 = "asd";
-    const resMenuList = diggingInJSON.map((item) => (
-      <li key={item.card.info.id}>
-        {item.card.info.name}:
-        <span>{item.card.info.price.toString().slice(0, -2) + ".00"}</span>
+    console.log(resMenu);
+    const resMenuList = resMenu.map((item) => (
+      <li key={item?.card?.info?.id}>
+        {item?.card?.info?.name}:
+        <span>{item?.card?.info?.price.toString().slice(0, -2) + ".00"}</span>
       </li>
     ));
     setResMenu(resMenuList);

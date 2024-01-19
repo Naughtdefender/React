@@ -6,9 +6,10 @@ import useRestaurant, { useRestaurantMenu } from "../utils/useRestaurant";
 const RestaurantMenu = function () {
   const { id } = useParams();
   const url =
-    "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.0869281&lng=78.2676116&restaurantId=" +
+    "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.1056329&lng=78.2953055&restaurantId=" +
     id +
     "&catalog_qa=undefined&submitAction=ENTER";
+  console.log(url);
   const restaurant = useRestaurant(url);
   const restaurantMenu = useRestaurantMenu(url);
 
