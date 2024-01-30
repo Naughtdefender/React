@@ -25,10 +25,14 @@ class Profile extends React.Component {
     const { userInfo } = this?.state;
     return (
       <div>
-        <img src={userInfo.avatar_url} alt="userImage" />
-        <h2>This is Profile Class.</h2>
-        <h2>My name is {userInfo?.name}</h2>
-        <h2>Location - {userInfo?.location}</h2>
+        <img
+          className="m-10 p-2 rounded-full h-72"
+          src={userInfo.avatar_url}
+          alt="userImage"
+        />
+        <h2 className="p-2 font-bold">This is Profile Class.</h2>
+        <h2 className="p-2 font-bold">My name is {userInfo?.name}</h2>
+        <h2 className="p-2 font-bold">Location - {userInfo?.location}</h2>
       </div>
     );
   }

@@ -10,6 +10,7 @@ import Contact from "./components/contact";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Profile from "./components/ProficeClass";
 import Shimmer from "./components/Shimmer";
+import UserContext from "./utils/UserContext.js";
 // import Instamart from "./components/Instamart";
 //Lazy Loading
 //Chunking
@@ -21,13 +22,22 @@ const Instamart = lazy(() => import("./components/Instamart.js"));
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const AppLayout = () => {
+  const [user, setUser] = useState({
+    name: "Kshitiz",
+    email: "kshitizsharma405@gmail.com",
+  });
   console.log(useState());
   return (
-    <>
+    <UserContext.Provider
+      value={{
+        user: user,
+        setUser: setUser,
+      }}
+    >
       <Header />
       <Outlet />
       <Footer />
-    </>
+    </UserContext.Provider>
   );
 };
 

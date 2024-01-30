@@ -1,14 +1,16 @@
 import RestaurantCard from "./RestaurantCard";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { swiggyURLRishikesh } from "../constants";
 import { filterData } from "../utils/helper";
+import UserContext from "../utils/UserContext";
 
 const Body = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
+  const { user, setUser } = useContext(UserContext);
   const searchAlgo = function () {
     const data = filterData(searchText, allRestaurants);
     setFilteredRestaurants(data);
@@ -45,7 +47,7 @@ const Body = () => {
   ) : (
     //If restaurant has data => render actual data
     <>
-      <div className="m-0 pt-4 bg-red-500 ">
+      <div className=" flex justify-center align-middle p-7 bg-red-500 ">
         <form
           className=" text-right mx-36"
           onSubmit={(e) => {
@@ -67,6 +69,15 @@ const Body = () => {
           >
             Search
           </button>
+          <input
+            value={user.name}
+            onChange={(e) => {
+              setUser({
+                name: e.target.value,
+                email: "new email@gmail.com",
+              });
+            }}
+          />
         </form>
       </div>
       <h1 className="m-auto text-center text-3xl font-semibold text-white  bg-red-500 border-b-2 border-white">

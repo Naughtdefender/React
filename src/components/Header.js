@@ -3,12 +3,15 @@ import { FoodVillaLogo1 } from "../assets/img/logo.js";
 import { Link } from "react-router-dom";
 import useOnline from "../utils/useOnline";
 import useAuth from "../utils/useAuth";
+import UserContext from "../utils/UserContext.js";
+import { useContext } from "react";
 
 const Header = () => {
   const [logIn, toggleLogIn] = useAuth(false);
   const isOnline = useOnline();
   const textClass = isOnline ? "text-green-700" : "text-red-600";
   const linkClass = "m-0 p-5 text-white hover:text-red-900 ";
+  const { user } = useContext(UserContext);
   return (
     <>
       <nav className="z-10 p-0 m-0 sticky top-0  flex justify-between bg-orange-500 shadow-lg">
@@ -41,8 +44,8 @@ const Header = () => {
             {logIn ? "LogIn" : "LogOut"}
           </button>
           {console.log(logIn)}
-          <span className={`m-3 ${textClass}`}>
-            {isOnline ? "🟢Online" : "🔴Offline"}
+          <span className={`m-1 ${textClass}`}>
+            {isOnline ? "🟢Online" : "🔴Offline"} {" " + user.name + " "}
           </span>
         </div>
       </nav>

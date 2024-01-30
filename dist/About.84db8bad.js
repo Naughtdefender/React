@@ -608,6 +608,8 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _proficeClass = require("./ProficeClass");
 var _proficeClassDefault = parcelHelpers.interopDefault(_proficeClass);
 var _react = require("react");
+var _userContext = require("../utils/UserContext");
+var _userContextDefault = parcelHelpers.interopDefault(_userContext);
 const About2 = function() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
@@ -615,14 +617,14 @@ const About2 = function() {
                 children: "This is About Page"
             }, void 0, false, {
                 fileName: "src/components/About.js",
-                lineNumber: 5,
+                lineNumber: 6,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "Happy to see you here"
             }, void 0, false, {
                 fileName: "src/components/About.js",
-                lineNumber: 6,
+                lineNumber: 7,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _proficeClassDefault.default), {
@@ -630,13 +632,13 @@ const About2 = function() {
                 dob: "13/04/2000"
             }, void 0, false, {
                 fileName: "src/components/About.js",
-                lineNumber: 7,
+                lineNumber: 8,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/components/About.js",
-        lineNumber: 4,
+        lineNumber: 5,
         columnNumber: 10
     }, this);
 };
@@ -661,17 +663,37 @@ class About extends (0, _react.Component) {
             className: "min-h-screen",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: "p-2 font-bold",
                     children: "This is About Page"
                 }, void 0, false, {
                     fileName: "src/components/About.js",
-                    lineNumber: 27,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "p-2 font-bold",
                     children: "Happy to see you here"
                 }, void 0, false, {
                     fileName: "src/components/About.js",
-                    lineNumber: 28,
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Consumer, {
+                    children: ({ user })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "p-2 font-bold",
+                            children: [
+                                user.name,
+                                " - ",
+                                user.email
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/About.js",
+                            lineNumber: 33,
+                            columnNumber: 15
+                        }, this)
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 30,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _proficeClassDefault.default), {
@@ -679,13 +701,13 @@ class About extends (0, _react.Component) {
                     dob: "13/04/2000"
                 }, void 0, false, {
                     fileName: "src/components/About.js",
-                    lineNumber: 29,
+                    lineNumber: 37,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/About.js",
-            lineNumber: 26,
+            lineNumber: 27,
             columnNumber: 12
         }, this);
     }
@@ -699,6 +721,6 @@ $RefreshReg$(_c, "About2");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./ProficeClass":"bGHXA","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1dSMa","1xC6H"], null, "parcelRequire77dd")
+},{"react/jsx-dev-runtime":"iTorj","./ProficeClass":"bGHXA","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/UserContext":"c5vgB"}]},["1dSMa","1xC6H"], null, "parcelRequire77dd")
 
 //# sourceMappingURL=About.84db8bad.js.map

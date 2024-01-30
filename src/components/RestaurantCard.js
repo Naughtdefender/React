@@ -8,8 +8,8 @@ const RestaurantCard = ({
   sla,
 }) => (
   <>
-    <div className="m-10 transition-transform transform hover:scale-110x">
-      <div className=" h-auto  w-56">
+    <div className="m-10 transition-transform transform hover:scale-95">
+      <div className="h-auto w-56">
         <div
           className="shadow-lg p-4 rounded-2xl bg-center bg-no-repeat bg-cover w-52 h-36 "
           style={{
