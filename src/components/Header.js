@@ -5,13 +5,15 @@ import useOnline from "../utils/useOnline";
 import useAuth from "../utils/useAuth";
 import UserContext from "../utils/UserContext.js";
 import { useContext } from "react";
-
+import { useSelector } from "react-redux";
 const Header = () => {
   const [logIn, toggleLogIn] = useAuth(false);
   const isOnline = useOnline();
   const textClass = isOnline ? "text-green-700" : "text-red-600";
-  const linkClass = "m-0 p-5 text-white hover:text-red-900 ";
+  const linkClass = "m-0 p-3 text-white hover:text-red-900 ";
   const { user } = useContext(UserContext);
+  const cartItems = useSelector((store) => store.cart.items);
+  console.log(cartItems);
   return (
     <>
       <nav className="z-10 p-0 m-0 sticky top-0  flex justify-between bg-orange-500 shadow-lg">
@@ -32,18 +34,22 @@ const Header = () => {
             <li>Instamart</li>
           </Link>
 
-          <Link to="/cart" className=" m-2 ">
-            <img src={cart} className=" h-5" alt="cart" />
+          <Link
+            to="/cart"
+            className="flex flex-row align-middle  text-white m-2"
+          >
+            <img src={cart} className=" h-6 mx-2" alt="cart" />{" "}
+            {cartItems.length}{" "}
           </Link>
         </ul>
         <div className="flex items-center">
           <button
-            className="bg-green-500 hover:bg-green-600 w-24 m-3 px-2 py-1 text-white rounded-md transform transition-transform duration-300 ease-in-out active:scale-95"
+            className="flex align-middle justify-center bg-green-500 hover:bg-green-600 p-1 m-2  text-white rounded-md transform transition-transform duration-300 ease-in-out active:scale-95"
             onClick={toggleLogIn}
           >
-            {logIn ? "LogIn" : "LogOut"}
+            Log {logIn ? " In" : " Out"}
           </button>
-          {console.log(logIn)}
+
           <span className={`m-1 ${textClass}`}>
             {isOnline ? "🟢Online" : "🔴Offline"} {" " + user.name + " "}
           </span>

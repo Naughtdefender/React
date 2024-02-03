@@ -2,24 +2,22 @@ import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer";
 import { IMG_URL_CDN } from "../constants";
 import useRestaurant, { useRestaurantMenu } from "../utils/useRestaurant";
-
 const RestaurantMenu = function () {
   const { id } = useParams();
   const url =
     "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.1056329&lng=78.2953055&restaurantId=" +
     id +
     "&catalog_qa=undefined&submitAction=ENTER";
-  console.log(url);
+  // console.log(url);
   const restaurant = useRestaurant(url);
   const restaurantMenu = useRestaurantMenu(url);
-
   return !restaurant ? (
     <Shimmer />
   ) : (
-    <div className="min-h-screen restaurantInfo">
-      <div className="card">
+    <div className="min-h-screen ">
+      <div className="">
         <img
-          className=""
+          className=" h-96"
           src={IMG_URL_CDN + restaurant?.cloudinaryImageId}
           alt="restaurant image"
         />

@@ -73,8 +73,17 @@ const Body = () => {
             value={user.name}
             onChange={(e) => {
               setUser({
-                name: e.target.value,
-                email: "new email@gmail.com",
+                ...user,
+                name: e?.target?.value,
+              });
+            }}
+          />
+          <input
+            value={user.email}
+            onChange={(e) => {
+              setUser({
+                ...user,
+                email: e?.target?.value,
               });
             }}
           />
