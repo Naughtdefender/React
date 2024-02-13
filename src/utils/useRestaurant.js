@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useDispatch } from "react-redux";
 import { addItem } from "../utils/cartSlice";
+import Shimmer from "../components/Shimmer";
 const useRestaurant = (url) => {
   const [restaurant, setRestaurant] = useState(null);
 
@@ -36,18 +37,22 @@ export const useRestaurantMenu = (url) => {
       json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[4]?.card
         ?.card?.itemCards;
     // console.log(resMenu);
-    const resMenuList = resMenu.map((item) => (
-      <li key={item?.card?.info?.id}>
-        {item?.card?.info?.name}:
-        <span>{item?.card?.info?.price.toString().slice(0, -2) + ".00"} </span>
-        <button
-          onClick={() => addFoodItem(item)}
-          className=" w-6 m-2 text-white border rounded-full bg-green-300"
-        >
-          +
-        </button>
-      </li>
-    ));
+    const resMenuList = resMenu.map((item) => {
+      const price = Math.floor(item?.card?.info?.price / 100) + ".00";
+      return (
+        <Suspense fallback={<Shimmer />}>
+          <li key={item?.card?.info?.id}>
+            {item?.card?.info?.name} : <span>{price}</span>
+            <button
+              onClick={() => addFoodItem(item)}
+              className=" w-6 m-2 text-white border rounded-full bg-green-300"
+            >
+              +
+            </button>
+          </li>
+        </Suspense>
+      );
+    });
     setResMenu(resMenuList);
   }
   return restaurantMenu;

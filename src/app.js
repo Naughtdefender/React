@@ -29,7 +29,6 @@ const AppLayout = () => {
     name: "Kshitiz",
     email: "kshitizsharma405@gmail.com",
   });
-  console.log(useState());
   return (
     <Provider store={store}>
       <UserContext.Provider

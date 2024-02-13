@@ -13,7 +13,6 @@ const Header = () => {
   const linkClass = "m-0 p-3 text-white hover:text-red-900 ";
   const { user } = useContext(UserContext);
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
   return (
     <>
       <nav className="z-10 p-0 m-0 sticky top-0  flex justify-between bg-orange-500 shadow-lg">
