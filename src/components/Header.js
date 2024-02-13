@@ -43,7 +43,7 @@ const Header = () => {
         </ul>
         <div className="flex items-center">
           <button
-            className="flex align-middle justify-center bg-green-500 hover:bg-green-600 p-1 m-2  text-white rounded-md transform transition-transform duration-300 ease-in-out active:scale-95"
+            className=" w-24 flex align-middle justify-center bg-green-500 hover:bg-green-600 p-1 m-2  text-white rounded-md transform transition-transform duration-300 ease-in-out active:scale-95"
             onClick={toggleLogIn}
           >
             Log {logIn ? " In" : " Out"}

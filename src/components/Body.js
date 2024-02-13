@@ -47,9 +47,9 @@ const Body = () => {
   ) : (
     //If restaurant has data => render actual data
     <>
-      <div className=" flex justify-center align-middle p-7 bg-red-500 ">
+      <div className="p-7 m-auto bg-red-500 ">
         <form
-          className=" text-right mx-36"
+          className="flex flex-col text-right m-auto"
           onSubmit={(e) => {
             e.preventDefault();
             searchAlgo();
@@ -57,19 +57,20 @@ const Body = () => {
         >
           <input
             type="text"
-            className="focus:bg-green-50 placeholder:italic placeholder:text-green-600 bg-gray-50 rounded-md my-2 px-2 py-1"
+            className=" w-52 focus:bg-green-50 placeholder:italic placeholder:text-green-600 bg-gray-50 rounded-md m-auto px-2 py-1"
             value={searchText}
             placeholder="search"
             onChange={(e) => setSearchText(e?.target?.value)}
           />
           <button
             type="button"
-            className="bg-green-500 transition hover:bg-green-600 m-2 px-2 py-1 text-white rounded-md   active:scale-95"
+            className=" w-36 bg-green-500 transition hover:bg-green-600 my-5 m-auto px-2 py-1 text-white rounded-md   active:scale-95"
             onClick={searchAlgo}
           >
             Search
           </button>
           <input
+            className="w-auto my-5 m-auto border rounded-md"
             value={user.name}
             onChange={(e) => {
               setUser({
@@ -79,6 +80,7 @@ const Body = () => {
             }}
           />
           <input
+            className="w-56 my-5 m-auto border rounded-md"
             value={user.email}
             onChange={(e) => {
               setUser({

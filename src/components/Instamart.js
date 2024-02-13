@@ -27,19 +27,31 @@ const Instamart = () => {
         title={"About Instamart"}
         description={`This is About section of Instamart`}
         visibleSection={visibleSection === "about"}
-        isVisible={() => setVisibleSection("about")}
+        isVisible={
+          visibleSection === "about"
+            ? () => setVisibleSection(false)
+            : () => setVisibleSection("about")
+        }
       />
       <Section
         title={"Team Instamart"}
         description={`This is another section of Instamart, Team section of Instamart. Instamart has over 50 members.`}
         visibleSection={visibleSection === "team"}
-        isVisible={() => setVisibleSection("team")}
+        isVisible={
+          visibleSection === "team"
+            ? () => setVisibleSection(false)
+            : () => setVisibleSection("team")
+        }
       />
       <Section
         title={"Careers Instamart"}
         description={`This is Careers section of Instamart`}
         visibleSection={visibleSection === "career"}
-        isVisible={() => setVisibleSection("career")}
+        isVisible={
+          visibleSection === "career"
+            ? () => setVisibleSection(false)
+            : () => setVisibleSection("career")
+        }
       />
     </div>
   );
