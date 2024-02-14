@@ -3,13 +3,13 @@ import { IMG_URL_CDN } from "../constants";
 import { removeItem } from "../utils/cartSlice";
 
 const FoodItems = ({ item }) => {
+  const { description, imageId, name, price, id } = item;
   const dispatch = useDispatch();
 
-  const handleRemoveItem = (item) => {
-    dispatch(removeItem(item));
+  const handleRemoveItem = (id) => {
+    dispatch(removeItem(id));
   };
 
-  const { description, imageId, name, price } = item;
   return (
     <div className="m-2 w-56 bg-green-200 border border-green-300 rounded-md">
       <h1 className="m-1">{name}</h1>
@@ -22,7 +22,7 @@ const FoodItems = ({ item }) => {
       </div>
       <h4 className="m-1 text-sm">{description}</h4>
       <h4>{price / 100}</h4>
-      <button onClick={handleRemoveItem}>remove</button>
+      <button onClick={() => handleRemoveItem(id)}>remove</button>
     </div>
   );
 };

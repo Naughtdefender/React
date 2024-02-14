@@ -1,13 +1,15 @@
 import { useState } from "react";
 
 const Section = ({ description, title, visibleSection, isVisible }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
   console.log("isVisible:", isVisible);
+
   return (
     <div className=" m-2 border border-black border-solid">
       <h1 className="text-2xl font-bold m-5 ">{title}</h1>
 
       {visibleSection && (
-        <p className="text-sm font-light m-5 ">{description}</p>
+        <p className="text-sm font-light m-5">{description}</p>
       )}
       <button
         className=" cursor-pointer border p-1 m-2 rounded-full bg-teal-400"

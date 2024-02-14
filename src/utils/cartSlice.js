@@ -12,7 +12,7 @@ const cartSlice = createSlice({
     removeItem: (state, action) => {
       // Filter out the item from the state
       const updatedItems = state.items.filter(
-        (item) => item !== action.payload
+        (item) => item?.card?.info?.id !== action.payload
       );
       return {
         ...state,

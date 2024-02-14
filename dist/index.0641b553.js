@@ -40431,7 +40431,7 @@ const cartSlice = (0, _toolkit.createSlice)({
         },
         removeItem: (state, action)=>{
             // Filter out the item from the state
-            const updatedItems = state.items.filter((item)=>item !== action.payload);
+            const updatedItems = state.items.filter((item)=>item?.card?.info?.id !== action.payload);
             return {
                 ...state,
                 items: updatedItems
@@ -44650,11 +44650,11 @@ var _cartSlice = require("../utils/cartSlice");
 var _s = $RefreshSig$();
 const FoodItems = ({ item })=>{
     _s();
+    const { description, imageId, name, price, id } = item;
     const dispatch = (0, _reactRedux.useDispatch)();
-    const handleRemoveItem = (item)=>{
-        dispatch((0, _cartSlice.removeItem)(item));
+    const handleRemoveItem = (id)=>{
+        dispatch((0, _cartSlice.removeItem)(id));
     };
-    const { description, imageId, name, price } = item;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "m-2 w-56 bg-green-200 border border-green-300 rounded-md",
         children: [
@@ -44663,7 +44663,7 @@ const FoodItems = ({ item })=>{
                 children: name
             }, void 0, false, {
                 fileName: "src/components/FoodItems.js",
-                lineNumber: 18,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -44674,12 +44674,12 @@ const FoodItems = ({ item })=>{
                     className: "m-1  h-28 border rounded-md"
                 }, void 0, false, {
                     fileName: "src/components/FoodItems.js",
-                    lineNumber: 20,
+                    lineNumber: 21,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/FoodItems.js",
-                lineNumber: 19,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -44687,28 +44687,28 @@ const FoodItems = ({ item })=>{
                 children: description
             }, void 0, false, {
                 fileName: "src/components/FoodItems.js",
-                lineNumber: 22,
+                lineNumber: 23,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: price / 100
             }, void 0, false, {
                 fileName: "src/components/FoodItems.js",
-                lineNumber: 23,
+                lineNumber: 24,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                onClick: handleRemoveItem,
+                onClick: ()=>handleRemoveItem(id),
                 children: "remove"
             }, void 0, false, {
                 fileName: "src/components/FoodItems.js",
-                lineNumber: 24,
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/FoodItems.js",
-        lineNumber: 17,
+        lineNumber: 18,
         columnNumber: 10
     }, undefined);
 };
