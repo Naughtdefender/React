@@ -19,7 +19,7 @@ const Header = () => {
         <Link to="/" className="flex justify-center items-center">
           <FoodVillaLogo1 />
         </Link>
-        <ul className="flex justify-center items-center">
+        <ul className="hidden lg:flex md:flex justify-center items-center ">
           <Link to="/" className={linkClass}>
             <li className="">Home</li>
           </Link>
