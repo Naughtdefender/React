@@ -1,5 +1,5 @@
 import cart from "../assets/img/cart.png";
-import { FoodVillaLogo1 } from "../assets/img/logo.js";
+import FoodVillaLogo1 from "../assets/img/logo.js";
 import { Link } from "react-router-dom";
 import useOnline from "../utils/useOnline";
 import useAuth from "../utils/useAuth";
@@ -17,8 +17,9 @@ const Header = () => {
     <>
       <nav className="z-10 p-0 m-0 sticky top-0  flex justify-between bg-orange-500 shadow-lg">
         <Link to="/" className="flex justify-center items-center">
-          <FoodVillaLogo1 />
+          {FoodVillaLogo1}
         </Link>
+
         <ul className="hidden lg:flex md:flex justify-center items-center ">
           <Link to="/" className={linkClass}>
             <li className="">Home</li>
@@ -35,9 +36,15 @@ const Header = () => {
 
           <Link
             to="/cart"
+            data-testid="cart-content"
             className="flex flex-row align-middle  text-white m-2"
           >
-            <img src={cart} className=" h-6 mx-2" alt="cart" />{" "}
+            <img
+              src={cart}
+              data-testid="cart"
+              className=" h-6 mx-2"
+              alt="cart"
+            />{" "}
             {cartItems.length}{" "}
           </Link>
         </ul>
@@ -49,8 +56,8 @@ const Header = () => {
             Log {logIn ? " In" : " Out"}
           </button>
 
-          <span className={`m-1 ${textClass}`}>
-            {isOnline ? "🟢Online" : "🔴Offline"} {" " + user.name + " "}
+          <span data-testid="online-status" className={`m-1 ${textClass}`}>
+            {isOnline ? "✅" : "❌"} {" " + user.name + " "}
           </span>
         </div>
       </nav>

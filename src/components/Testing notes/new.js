@@ -33,4 +33,17 @@
  * config jest with babel because jest dont know what is import or module
  * npm install --save-dev babel-jest @babel/core @babel/preset-env
  * add presets in babel config file - presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+ * wrote expect sum test and try to run it
+ *
+ * added coverage in gitignore
+ * we have to install a library - npm i -D @babel/preset-react
+ * jest doesn't understand jsx also so we have to configure it as well with babel by adding preset
+ * ["@babel/preset-react",{"runtime": "automatic"}]]
+ * after this we try to test our header to show logo for this we have to import render from react test library  and wrap our header in render function 
+ * after this we get  an error that jest dont understand png format so we have to make a dummyLogo.js file in mocks folder so that we can use it as a replacement for png file for this we have to configure our jest.config file in this file we have  moduleNameMapper in this we have to add our config - moduleNameMapper: {
+    "\\.(jpg|png|svg|jpeg)$": "../mocks/dummyImage.js",
+  },
+  jest dont understand router as well so we need to provide StaticRouter from "react-router-dom/server" library
+  after that we log the render header
+  in this header we find the logo by getAllByTestId("logo") to find it we have to describe it in header component where img tag is placed in img tag we add a attribute - data-testid="logo" so that jest recognizes it as id if we use normal id then it recognizes by browser
  */
