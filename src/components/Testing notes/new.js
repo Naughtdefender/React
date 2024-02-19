@@ -46,4 +46,7 @@
   jest dont understand router as well so we need to provide StaticRouter from "react-router-dom/server" library
   after that we log the render header
   in this header we find the logo by getAllByTestId("logo") to find it we have to describe it in header component where img tag is placed in img tag we add a attribute - data-testid="logo" so that jest recognizes it as id if we use normal id then it recognizes by browser
- */
+  jest dont understand fetch function because its a browser thing so it gives us a function - 
+  We are now creating a dummy function 
+  global.fetch = jest.fn() //inside function we have to give a promise that is to resolve or fail and after that we have to pass in json in which we have to parse api data 
+  */

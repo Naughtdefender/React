@@ -11,7 +11,8 @@ const Body = () => {
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
   const { user, setUser } = useContext(UserContext);
-  const searchAlgo = function () {
+  const searchAlgo = (e) => {
+    e.preventDefault();
     const data = filterData(searchText, allRestaurants);
     setFilteredRestaurants(data);
   };
@@ -48,13 +49,7 @@ const Body = () => {
     //If restaurant has data => render actual data
     <>
       <div className="p-7 m-auto bg-red-500 ">
-        <form
-          className="flex flex-col text-right m-auto"
-          onSubmit={(e) => {
-            e.preventDefault();
-            searchAlgo();
-          }}
-        >
+        <form className="flex flex-col text-right m-auto" onSubmit={searchAlgo}>
           <input
             type="text"
             className=" w-52 focus:bg-green-50 placeholder:italic placeholder:text-green-600 bg-gray-50 rounded-md m-auto px-2 py-1"
@@ -63,9 +58,9 @@ const Body = () => {
             onChange={(e) => setSearchText(e?.target?.value)}
           />
           <button
-            type="button"
+            data-testid="search-btn"
+            type="submit"
             className=" w-36 bg-green-500 transition hover:bg-green-600 my-5 m-auto px-2 py-1 text-white rounded-md   active:scale-95"
-            onClick={searchAlgo}
           >
             Search
           </button>
@@ -94,7 +89,10 @@ const Body = () => {
       <h1 className="m-auto text-center text-3xl font-semibold text-white  bg-red-500 border-b-2 border-white">
         Restaurants List
       </h1>
-      <div className=" px-44  bg-gradient-to-b from-whitebg-gradient-to-r from-red-500 to-orange-500 flex flex-wrap  min-h-screen">
+      <div
+        className=" px-44  bg-gradient-to-b from-whitebg-gradient-to-r from-red-500 to-orange-500 flex flex-wrap  min-h-screen"
+        data-testid="restaurant-list"
+      >
         {filteredRestaurants?.length === 0 ? (
           <h1 style={{ height: "48vh", margin: "auto" }}>
             No Restaurant match your search!!

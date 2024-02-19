@@ -18,7 +18,10 @@ const ShimmerCard = function () {
 
 const Shimmer = ({ count }) => {
   return (
-    <div className="min-h-screen flex justify-center items-center flex-wrap">
+    <div
+      className="min-h-screen flex justify-center items-center flex-wrap"
+      data-testid="shimmer"
+    >
       {Array(count)
         .fill("")
         .map((e, i) => (
