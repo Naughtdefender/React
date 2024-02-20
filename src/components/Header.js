@@ -16,7 +16,11 @@ const Header = () => {
   return (
     <>
       <nav className="z-10 p-0 m-0 sticky top-0  flex justify-between bg-orange-500 shadow-lg">
-        <Link to="/" className="flex justify-center items-center">
+        <Link
+          to="/"
+          data-testid="logo"
+          className="flex justify-center items-center"
+        >
           {FoodVillaLogo1}
         </Link>
 

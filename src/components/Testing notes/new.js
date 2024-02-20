@@ -49,4 +49,16 @@
   jest dont understand fetch function because its a browser thing so it gives us a function - 
   We are now creating a dummy function 
   global.fetch = jest.fn() //inside function we have to give a promise that is to resolve or fail and after that we have to pass in json in which we have to parse api data 
+  after that we have to check for search by giving some value. In this we have to use fireEvent function given by react testing library in which we use it by
+  fireEvent.change(searchInput,{
+    target:{
+      value:"jaysika"
+    }
+  })
+  after that to check the filtered restaurants we have to check it by fireEvent.click functionality in which we pass searchbtn testid
+  and to check that restaurants are updated we get restaurants list by giving testid to filtered restaurants in body and grabbing it in test file and check the length of the restaurants as these are childrens in restaurants 
+  
+  Next step is to check adding items in cart functionality
+  
+  
   */

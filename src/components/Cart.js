@@ -9,7 +9,7 @@ const Cart = () => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="m-10 flex flex-col">
       <h1 className="m-5 flex align-middle justify-center font-bold text-lg">
         This is Cart Page
       </h1>
@@ -19,12 +19,15 @@ const Cart = () => {
       >
         clear
       </button>
-      <div className="flex m-2">
+      <ul
+        data-testid="cart-items"
+        className=" flex m-10 flex-wrap justify-center"
+      >
         {cartItems.map((item) => {
           const data = item?.card?.info;
           return <FoodItems item={data} key={data?.id} />;
         })}
-      </div>
+      </ul>
     </div>
   );
 };

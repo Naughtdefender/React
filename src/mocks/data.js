@@ -6161,3 +6161,5048 @@ export const RESTAURANT_DATA = {
   deviceId: "815ac4c7-6841-d922-231e-4732e9f00948",
   csrfToken: "tuNqO9vZoS61-9Ph8QygaP2AuORa6CqeDGTjjNeg",
 };
+
+const menu = {
+  statusCode: 0,
+  data: {
+    statusMessage: "done successfully",
+    cards: [
+      {
+        card: {
+          card: {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+            text: "Jaysika DDN Fast Food",
+            headerStyling: {
+              textColor: "text_Highest_Emphasis",
+              textVariant: "header_H3_Black",
+            },
+          },
+        },
+      },
+      {
+        card: {
+          card: {
+            "@type":
+              "type.googleapis.com/swiggy.gandalf.widgets.v2.RestaurantBlTab",
+            tabs: [
+              {
+                id: "Order Online",
+                title: "Order Online",
+              },
+            ],
+          },
+        },
+      },
+      {
+        card: {
+          card: {
+            "@type":
+              "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            info: {
+              id: "123836",
+              name: "Jaysika DDN Fast Food",
+              city: "Rishikesh",
+              slugs: {
+                restaurant: "jaysika-ddn-fast-food-ram_jhula-ram_jhula",
+                city: "rishikesh",
+              },
+              uniqueId: "e51e6528-4859-48c8-8fed-e84c17dc2d76",
+              cloudinaryImageId: "850f3ec564180d7f3341b065d159df33",
+              locality: "Tilak Road\n",
+              areaName: "Tilak Road",
+              costForTwo: "15000",
+              costForTwoMessage: "₹150 for two",
+              cuisines: ["Continental", "Indian"],
+              avgRating: 4.1,
+              veg: true,
+              feeDetails: {
+                restaurantId: "123836",
+                fees: [
+                  {
+                    name: "distance",
+                    fee: 1200,
+                  },
+                  {
+                    name: "time",
+                  },
+                  {
+                    name: "special",
+                  },
+                ],
+                totalFee: 1200,
+                icon: "v1648635511/Delivery_fee_new_cjxumu",
+                message: "Order above 149 for discounted delivery fee",
+              },
+              parentId: "110439",
+              avgRatingString: "4.1",
+              totalRatingsString: "5K+ ratings",
+              sla: {
+                restaurantId: "123836",
+                deliveryTime: 36,
+                minDeliveryTime: 35,
+                maxDeliveryTime: 40,
+                lastMileTravel: 0.1,
+                serviceability: "SERVICEABLE",
+                stressFactor: 1,
+                rainMode: "RAIN_MODE_NONE",
+                longDistance: "LONG_DISTANCE_NOT_LONG_DISTANCE",
+                zoneId: 1123,
+                slaString: "35-40 MINS",
+                lastMileTravelString: "0.1 km",
+                iconType: "ICON_TYPE_EMPTY",
+              },
+              availability: {
+                nextCloseTime: "2024-02-20 22:30:00",
+                visibility: true,
+                opened: true,
+                restaurantClosedMeta: {},
+              },
+              aggregatedDiscountInfo: {
+                header: "60% off",
+                shortDescriptionList: [
+                  {
+                    meta: "60% off | Use TRYNEW",
+                    discountType: "Percentage",
+                    operationType: "RESTAURANT",
+                  },
+                  {
+                    meta: "Flat ₹175 off on orders above ₹399",
+                    discountType: "Flat",
+                    operationType: "RESTAURANT",
+                  },
+                ],
+                descriptionList: [
+                  {
+                    meta: "60% off up to ₹120 | Use code TRYNEW",
+                    discountType: "Percentage",
+                    operationType: "RESTAURANT",
+                  },
+                  {
+                    meta: "Flat ₹175 off on orders above ₹399 | Use code MEGASAVER",
+                    discountType: "Flat",
+                    operationType: "RESTAURANT",
+                  },
+                ],
+                visible: true,
+              },
+              badges: {},
+              slugString: "jaysika-ddn-fast-food-ram_jhula-ram_jhula",
+              isOpen: true,
+              labels: [
+                {
+                  title: "Timings",
+                  message: "null",
+                },
+                {
+                  title: "Address",
+                  message: "tilak road, opp ritual salon, rishikesh",
+                },
+                {
+                  title: "Cuisines",
+                  message: "Continental,Indian",
+                },
+              ],
+              totalRatings: 5000,
+              aggregatedDiscountInfoV2: {
+                header: "60% off",
+                shortDescriptionList: [
+                  {
+                    meta: "60% off | Use TRYNEW",
+                    discountType: "Percentage",
+                    operationType: "RESTAURANT",
+                  },
+                  {
+                    meta: "Flat ₹175 off on orders above ₹399",
+                    discountType: "Flat",
+                    operationType: "RESTAURANT",
+                  },
+                ],
+                descriptionList: [
+                  {
+                    meta: "60% off up to ₹120 | Use code TRYNEW",
+                    discountType: "Percentage",
+                    operationType: "RESTAURANT",
+                  },
+                  {
+                    meta: "Flat ₹175 off on orders above ₹399 | Use code MEGASAVER",
+                    discountType: "Flat",
+                    operationType: "RESTAURANT",
+                  },
+                ],
+                couponDetailsCta: "View coupon details",
+              },
+              type: "F",
+              nudgeBanners: [
+                {
+                  minValue: 279,
+                  maxValue: 399,
+                  priority: 2,
+                  couponCode: "MEGASAVER",
+                  discountInfo: {
+                    discountType: "Flat",
+                    value: 175,
+                  },
+                  lockedMessage:
+                    "Add items worth ₹<amount> to save ₹175 | Code MEGASAVER",
+                  unlockedMessage:
+                    "MEGASAVER Coupon Unlocked! Use it to save ₹175",
+                  logoCtx: {},
+                },
+              ],
+              headerBanner: {
+                url: "swiggy://webview?is_external=false&webview_url=https://www.swiggy.com/restaurant-info/123836",
+              },
+              expectationNotifiers: [
+                {
+                  text: "Order above 149 for discounted delivery fee",
+                  icon: {
+                    imageId: "v1648635511/Delivery_fee_new_cjxumu",
+                  },
+                  popup: {
+                    cta: {},
+                  },
+                  type: "DISTANCE_FEE_NON_FOOD_LM",
+                  enrichedText: "Order above 149 for discounted delivery fee",
+                  halfCardPopup: {
+                    halfCardPopupHeader: {},
+                  },
+                },
+              ],
+              ratingSlab: "RATING_SLAB_5",
+              orderabilityCommunication: {
+                title: {},
+                subTitle: {},
+                message: {},
+                customIcon: {},
+              },
+              hasBestsellerItems: true,
+              cartOrderabilityNudgeBanner: {
+                parameters: {},
+                presentation: {},
+              },
+              latLong: "30.10469,78.294114",
+              backgroundImageOverlayInfo: {},
+            },
+            analytics: {},
+          },
+          relevance: {
+            type: "RELEVANCE_TYPE_CHECK_ORDERABILITY_ON_ITEM_ADD",
+            sectionId: "POP_UP_CROUTON_MENU",
+          },
+        },
+      },
+      {
+        card: {
+          card: {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+            layout: {
+              rows: 1,
+              columns: 5,
+              horizontalScrollEnabled: true,
+              itemSpacing: 12,
+              lineSpacing: 10,
+              widgetPadding: {},
+              containerStyle: {
+                containerPadding: {
+                  left: 10,
+                  right: 10,
+                  bottom: 16,
+                },
+              },
+              scrollBar: {},
+            },
+            id: "offerCollectionWidget_UX4",
+            gridElements: {
+              infoWithStyle: {
+                "@type":
+                  "type.googleapis.com/swiggy.presentation.food.v2.OfferInfoWithStyle",
+                offers: [
+                  {
+                    info: {
+                      header: "60% OFF UPTO ₹120",
+                      offerTagColor: "#E46D47",
+                      offerIds: ["4e82c5b3-fbd9-4ec0-9877-a58ad9bcfe36"],
+                      expiryTime: "1970-01-01T00:00:00Z",
+                      couponCode: "USE TRYNEW",
+                      description: "ABOVE ₹149",
+                      offerType: "offers",
+                      restId: "123836",
+                      offerLogo: "offers/generic",
+                      descriptionTextColor: "#7302060C",
+                    },
+                    cta: {
+                      type: "OFFER_HALF_CARD",
+                    },
+                  },
+                  {
+                    info: {
+                      header: "FLAT ₹175 OFF",
+                      offerTag: "DEFAULT",
+                      offerTagColor: "#E46D47",
+                      offerIds: ["61c44bfb-272b-45cb-b322-fb9047fe2b09"],
+                      expiryTime: "1970-01-01T00:00:00Z",
+                      couponCode: "USE MEGASAVER",
+                      description: "ABOVE ₹399",
+                      offerType: "offers",
+                      restId: "123836",
+                      offerLogo: "offers/generic",
+                      descriptionTextColor: "#7302060C",
+                    },
+                    cta: {
+                      type: "OFFER_HALF_CARD",
+                    },
+                  },
+                  {
+                    info: {
+                      header: "FLAT ₹50 OFF",
+                      offerTagColor: "#E46D47",
+                      logoBottom:
+                        "MARKETING_BANNERS/IMAGES/OFFERS/2024/2/16/d2280c74-96d1-4a1d-afd6-4270a05b5488_ICICI.png",
+                      offerIds: ["72b12a41-597c-4c87-a813-32c46574fde9"],
+                      expiryTime: "1970-01-01T00:00:00Z",
+                      couponCode: "NO CODE REQUIRED",
+                      description: "ABOVE ₹500",
+                      offerType: "offers",
+                      restId: "123836",
+                      offerLogo:
+                        "MARKETING_BANNERS/IMAGES/OFFERS/2024/2/16/d2280c74-96d1-4a1d-afd6-4270a05b5488_ICICI.png",
+                      descriptionTextColor: "#7302060C",
+                    },
+                    cta: {
+                      type: "OFFER_HALF_CARD",
+                    },
+                  },
+                  {
+                    info: {
+                      header: "20% OFF UPTO ₹125",
+                      offerTagColor: "#E46D47",
+                      logoBottom:
+                        "rng/md/ads/production/4abdba6754dfedb04324150e316a4004",
+                      offerIds: ["78d1d7e9-27ea-4c0d-9c48-26b48a643035"],
+                      expiryTime: "1970-01-01T00:00:00Z",
+                      couponCode: "USE KOTAK125",
+                      description: "ABOVE ₹500",
+                      offerType: "offers",
+                      restId: "123836",
+                      offerLogo:
+                        "rng/md/ads/production/4abdba6754dfedb04324150e316a4004",
+                      descriptionTextColor: "#7302060C",
+                    },
+                    cta: {
+                      type: "OFFER_HALF_CARD",
+                    },
+                  },
+                  {
+                    info: {
+                      header: "FLAT ₹30 OFF",
+                      offerTagColor: "#E46D47",
+                      logoBottom:
+                        "rng/md/ads/production/7f31c9e47ddd7e6a3c16d21553c0ca60",
+                      offerIds: ["269c382d-796f-45cd-bd15-0b8b891c5e0c"],
+                      expiryTime: "1970-01-01T00:00:00Z",
+                      couponCode: "USE SIMPL30",
+                      description: "ABOVE ₹300",
+                      offerType: "offers",
+                      restId: "123836",
+                      offerLogo:
+                        "rng/md/ads/production/7f31c9e47ddd7e6a3c16d21553c0ca60",
+                      descriptionTextColor: "#7302060C",
+                    },
+                    cta: {
+                      type: "OFFER_HALF_CARD",
+                    },
+                  },
+                ],
+                habitMilestoneInfo: {
+                  callout: {},
+                },
+                loyaltyDiscoverPresentationInfo: {
+                  logoCtx: {},
+                },
+              },
+            },
+          },
+        },
+      },
+      {
+        groupedCard: {
+          cardGroupMap: {
+            REGULAR: {
+              cards: [
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.MenuVegFilterAndBadge",
+                      isPureVeg: true,
+                      badges: {},
+                      vegOnlyDetails: {
+                        imageId: "AutoVegOnly_qkjowj",
+                        title: "Showing only vegetarian options.",
+                        description:
+                          "Tap on the VEG ONLY button to turn off the setting",
+                      },
+                      topRatedFilter: {},
+                      kidsCategoryFilter: {
+                        attributes: {
+                          displayText: "Kids Favourites",
+                          tooltip: {
+                            enabled: true,
+                            displayText:
+                              "Kids Favourites Filter applied. Remove this filter to see the full Menu.",
+                          },
+                        },
+                      },
+                      vegFilter: {
+                        attributes: {
+                          displayText: "VEG",
+                        },
+                      },
+                      nonvegFilter: {
+                        attributes: {
+                          displayText: "NONVEG",
+                        },
+                      },
+                    },
+                    relevance: {
+                      type: "RELEVANCE_TYPE_ON_MENU_FILTER_TOGGLED",
+                      sectionId: "MENU_FILTER_TOGGLE",
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Recommended",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70341041",
+                              name: "Veg Munchurian(dry)",
+                              category: "Chinese Maza",
+                              imageId: "6b835f424c488d927b1ff896ebba2444",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.6",
+                                  ratingCount: "49 ratings",
+                                  ratingCountV2: "49",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70341072",
+                              name: "Veg Manchurian ( Gravy)",
+                              category: "Chinese Maza",
+                              imageId: "449056acf7136a50d60167aabf776976",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 11900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.6",
+                                  ratingCount: "127 ratings",
+                                  ratingCountV2: "127",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70341139",
+                              name: "Veg Paneer Manchurian(gravy)",
+                              category: "Chinese Maza",
+                              imageId: "a804477ee8afbec5b5d2319717a83bda",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 14900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "36 ratings",
+                                  ratingCountV2: "36",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70341292",
+                              name: "Chilly Paneer (Dry)",
+                              category: "Chinese Maza",
+                              description:
+                                "Paneer manchurian is a very popular Indo - Chinese dish made with paneer. for all those who love something spicy and sa",
+                              imageId: "xqiykyzxhdyimyfa3wnb",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 14900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "112 ratings",
+                                  ratingCountV2: "112",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70341318",
+                              name: "Chilly Mushroom(dry)",
+                              category: "Chinese Maza",
+                              imageId: "814c674696443284064c7c29616eeb48",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 13900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.6",
+                                  ratingCount: "16 ratings",
+                                  ratingCountV2: "16",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50509834",
+                              name: "Chilli Garlic Noodels",
+                              category: "Fast Food",
+                              description: "Serves 1",
+                              imageId: "236152bfc9b3945b4a368e55fb3def62",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 10000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                                portionSize: "Serves 1",
+                              },
+                              ribbon: {},
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.6",
+                                  ratingCount: "39 ratings",
+                                  ratingCountV2: "39",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50506448",
+                              name: "Veg Butter Paneer Noodels ",
+                              category: "Fast Food",
+                              imageId: "67c79578483ea16e2546d750352368bc",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "1.0",
+                                  ratingCount: "4 ratings",
+                                  ratingCountV2: "4",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50509821",
+                              name: "Paneer Noodels ",
+                              category: "Fast Food",
+                              imageId: "67c79578483ea16e2546d750352368bc",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.6",
+                                  ratingCount: "12 ratings",
+                                  ratingCountV2: "12",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010725",
+                              name: "Mushroom Chow mein",
+                              category: "Fast Food",
+                              imageId: "ywrqrspepzenjtcyq2dw",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 5500,
+                              variants: {
+                                variantGroups: [
+                                  {
+                                    groupId: "3015676",
+                                    name: "Quantity",
+                                    variations: [
+                                      {
+                                        name: "Full",
+                                        price: 4500,
+                                        default: 1,
+                                        id: "10100183",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                      {
+                                        name: "Half",
+                                        id: "10100182",
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "144 ratings",
+                                  ratingCountV2: "144",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010726",
+                              name: "Paneer Chow mein",
+                              category: "Fast Food",
+                              description:
+                                "Stir- fried noodles tossed with thinly sliced veggies aromatic herbs with flavourful sauces with soft paneer.",
+                              imageId: "tygfuwm9p80rhxhvzobu",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 5500,
+                              variants: {
+                                variantGroups: [
+                                  {
+                                    groupId: "3015677",
+                                    name: "Quantity",
+                                    variations: [
+                                      {
+                                        name: "Half",
+                                        default: 1,
+                                        id: "10100184",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                      {
+                                        name: "Full",
+                                        price: 4500,
+                                        id: "10100185",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {
+                                text: "Bestseller",
+                                textColor: "#ffffff",
+                                topBackgroundColor: "#d53d4c",
+                                bottomBackgroundColor: "#b02331",
+                              },
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              isBestseller: true,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.7",
+                                  ratingCount: "460 ratings",
+                                  ratingCountV2: "460",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010727",
+                              name: "Butter Chow mein",
+                              category: "Fast Food",
+                              imageId: "bb479588a1e0241685b69718aacc28a9",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 5500,
+                              variants: {
+                                variantGroups: [
+                                  {
+                                    groupId: "3015678",
+                                    name: "Quantity",
+                                    variations: [
+                                      {
+                                        name: "Half",
+                                        default: 1,
+                                        id: "10100186",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                      {
+                                        name: "Full",
+                                        price: 4500,
+                                        id: "10100187",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "23 ratings",
+                                  ratingCountV2: "23",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010732",
+                              name: "Chilli Potato",
+                              category: "Fast Food",
+                              description:
+                                "A popular Indo-Chinese cuisine which is addictive here, potatoes are boiled and fried , mixed with a variety of spices.",
+                              imageId: "yfs6c9fwtmexdvhwnnj0",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 7000,
+                              variants: {
+                                variantGroups: [
+                                  {
+                                    groupId: "6555719",
+                                    name: "Quantity",
+                                    variations: [
+                                      {
+                                        name: "Half",
+                                        price: 1000,
+                                        id: "21661983",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                      {
+                                        name: "Full",
+                                        price: 5500,
+                                        default: 1,
+                                        id: "21661984",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {
+                                text: "Bestseller",
+                                textColor: "#ffffff",
+                                topBackgroundColor: "#d53d4c",
+                                bottomBackgroundColor: "#b02331",
+                              },
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              isBestseller: true,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.7",
+                                  ratingCount: "686 ratings",
+                                  ratingCountV2: "686",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010738",
+                              name: "Penne Pasta in Red Sauce",
+                              category: "Fast Food",
+                              description:
+                                "Penne cooked to perfection in a tangy fresh Tomato Sauce with Garlic, Olives, Capers, Celery, Olive Oil & Basil topped with Parmesan Cheese",
+                              imageId: "yuzwnxcnvt0sfesnbkyv",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 5000,
+                              variants: {
+                                variantGroups: [
+                                  {
+                                    groupId: "3015683",
+                                    name: "Quantity",
+                                    variations: [
+                                      {
+                                        name: "Half",
+                                        price: 1500,
+                                        default: 1,
+                                        id: "10100196",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                      {
+                                        name: "Full",
+                                        price: 7000,
+                                        id: "10100197",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {
+                                text: "Bestseller",
+                                textColor: "#ffffff",
+                                topBackgroundColor: "#d53d4c",
+                                bottomBackgroundColor: "#b02331",
+                              },
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              isBestseller: true,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.9",
+                                  ratingCount: "1222 ratings",
+                                  ratingCountV2: "1222",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010739",
+                              name: "Penne Pasta in White Sauce",
+                              category: "Fast Food",
+                              description:
+                                "One of our favorite way to serve Pesto, in a creamy white sauce with pasta. Rich, pungent and fresh, it coats the pasta and every bite will satisfy you.",
+                              imageId: "mnqtsaurgkve5oqiw4ip",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 6500,
+                              variants: {
+                                variantGroups: [
+                                  {
+                                    groupId: "3015684",
+                                    name: "Quantity",
+                                    variations: [
+                                      {
+                                        name: "Half",
+                                        default: 1,
+                                        id: "10100198",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                      {
+                                        name: "Full",
+                                        price: 4500,
+                                        id: "10100199",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {
+                                text: "Bestseller",
+                                textColor: "#ffffff",
+                                topBackgroundColor: "#d53d4c",
+                                bottomBackgroundColor: "#b02331",
+                              },
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              isBestseller: true,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.7",
+                                  ratingCount: "815 ratings",
+                                  ratingCountV2: "815",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010740",
+                              name: "Chinese Penne Pasta",
+                              category: "Fast Food",
+                              imageId: "6a170148464578ee38af50c46aa26250",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 5000,
+                              variants: {
+                                variantGroups: [
+                                  {
+                                    groupId: "3015685",
+                                    name: "Quantity",
+                                    variations: [
+                                      {
+                                        name: "Half",
+                                        price: 1500,
+                                        default: 1,
+                                        id: "10100200",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                      {
+                                        name: "Full",
+                                        price: 7000,
+                                        id: "10100201",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.5",
+                                  ratingCount: "93 ratings",
+                                  ratingCountV2: "93",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010744",
+                              name: "French Fri",
+                              category: "Fast Food",
+                              imageId: "jjsqa7mk3mz8u2gknqpi",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 6000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "182 ratings",
+                                  ratingCountV2: "182",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "84722611",
+                              name: "Chole Rice",
+                              category: "Breakfast",
+                              description:
+                                "Simple, aromatic, and healthy meal of delicious rice topped with our special chickpea cooked in special blend of spices.",
+                              imageId: "01157beca9162501f73e19fee1334a52",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.7",
+                                  ratingCount: "30 ratings",
+                                  ratingCountV2: "30",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "77186642",
+                              name: "Mix Bread Roll",
+                              category: "Jaysika Dehradun Special",
+                              imageId: "7906383d7817ee5c60c5ddd6b4408254",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 11500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.6",
+                                  ratingCount: "3 ratings",
+                                  ratingCountV2: "3",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "74241241",
+                              name: "Chole Kulche",
+                              category: "Punjabi Tadka",
+                              description:
+                                "Serves 1 | Baked indian flatbread brushed with butter served with chola",
+                              imageId: "rwgkraho0syymfowosbq",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 7000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                                portionSize: "Serves 1",
+                              },
+                              ribbon: {
+                                text: "Bestseller",
+                                textColor: "#ffffff",
+                                topBackgroundColor: "#d53d4c",
+                                bottomBackgroundColor: "#b02331",
+                              },
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              isBestseller: true,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.6",
+                                  ratingCount: "139 ratings",
+                                  ratingCountV2: "139",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010737",
+                              name: "Veg Fried Rice",
+                              category: "Special Rice",
+                              description:
+                                "Serves 1 | Classic indo-chinese rice, with onion, carrot, bell-pepper and cabbage cooked in basic yet irresistible chinese spices.",
+                              imageId: "p8dy7g6rqyw2ancoftwc",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 11000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                                portionSize: "Serves 1",
+                              },
+                              ribbon: {},
+                              showImage: true,
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.0",
+                                  ratingCount: "202 ratings",
+                                  ratingCountV2: "202",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                      type: "CATEGORY_TYPE_RECOMMENDED",
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Chinese Maza",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70341041",
+                              name: "Veg Munchurian(dry)",
+                              category: "Chinese Maza",
+                              imageId: "6b835f424c488d927b1ff896ebba2444",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.6",
+                                  ratingCount: "49 ratings",
+                                  ratingCountV2: "49",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70341335",
+                              name: "Chilly Mushroom ( Gravy )",
+                              category: "Chinese Maza",
+                              description: "Serves 1",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 15900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                                portionSize: "Serves 1",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.2",
+                                  ratingCount: "7 ratings",
+                                  ratingCountV2: "7",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70341072",
+                              name: "Veg Manchurian ( Gravy)",
+                              category: "Chinese Maza",
+                              imageId: "449056acf7136a50d60167aabf776976",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 11900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.6",
+                                  ratingCount: "127 ratings",
+                                  ratingCountV2: "127",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70341138",
+                              name: "Veg Paneer Munchurian(dry)",
+                              category: "Chinese Maza",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 12900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.9",
+                                  ratingCount: "13 ratings",
+                                  ratingCountV2: "13",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70341139",
+                              name: "Veg Paneer Manchurian(gravy)",
+                              category: "Chinese Maza",
+                              imageId: "a804477ee8afbec5b5d2319717a83bda",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 14900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "36 ratings",
+                                  ratingCountV2: "36",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70341292",
+                              name: "Chilly Paneer (Dry)",
+                              category: "Chinese Maza",
+                              description:
+                                "Paneer manchurian is a very popular Indo - Chinese dish made with paneer. for all those who love something spicy and sa",
+                              imageId: "xqiykyzxhdyimyfa3wnb",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 14900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "112 ratings",
+                                  ratingCountV2: "112",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70341307",
+                              name: "Chilly Paneer(gravy)",
+                              category: "Chinese Maza",
+                              description:
+                                "Deep fry paneer in soy & green chilli sauce.",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 16900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.1",
+                                  ratingCount: "35 ratings",
+                                  ratingCountV2: "35",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70341318",
+                              name: "Chilly Mushroom(dry)",
+                              category: "Chinese Maza",
+                              imageId: "814c674696443284064c7c29616eeb48",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 13900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.6",
+                                  ratingCount: "16 ratings",
+                                  ratingCountV2: "16",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Fast Food",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50509834",
+                              name: "Chilli Garlic Noodels",
+                              category: "Fast Food",
+                              description: "Serves 1",
+                              imageId: "236152bfc9b3945b4a368e55fb3def62",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 10000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                                portionSize: "Serves 1",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.6",
+                                  ratingCount: "39 ratings",
+                                  ratingCountV2: "39",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50509833",
+                              name: "Veg Panner Mashroom Noodels",
+                              category: "Fast Food",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 11000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "5.0",
+                                  ratingCount: "3 ratings",
+                                  ratingCountV2: "3",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50506449",
+                              name: "Veg Butter Mushroom Noodels",
+                              category: "Fast Food",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.1",
+                                  ratingCount: "3 ratings",
+                                  ratingCountV2: "3",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50506448",
+                              name: "Veg Butter Paneer Noodels ",
+                              category: "Fast Food",
+                              imageId: "67c79578483ea16e2546d750352368bc",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "1.0",
+                                  ratingCount: "4 ratings",
+                                  ratingCountV2: "4",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50509821",
+                              name: "Paneer Noodels ",
+                              category: "Fast Food",
+                              imageId: "67c79578483ea16e2546d750352368bc",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.6",
+                                  ratingCount: "12 ratings",
+                                  ratingCountV2: "12",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50506436",
+                              name: "Mushroom Noodles",
+                              category: "Fast Food",
+                              description:
+                                "A delicious dish of cooked noodles that has been stir-fried in a wok with veggies and mushroom.",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {},
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010723",
+                              name: "Veg Chow mein",
+                              category: "Fast Food",
+                              description:
+                                "A chinese dish made from an intense mixture of noodles and vegetables in addition to variety of sauces.",
+                              imageId: "e1snapxkei1w9cm86aaz",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 4500,
+                              variants: {
+                                variantGroups: [
+                                  {
+                                    groupId: "3015674",
+                                    name: "Quantity",
+                                    variations: [
+                                      {
+                                        name: "Half",
+                                        default: 1,
+                                        id: "10100178",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                      {
+                                        name: "Full",
+                                        price: 3500,
+                                        id: "10100179",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {
+                                text: "Bestseller",
+                                textColor: "#ffffff",
+                                topBackgroundColor: "#d53d4c",
+                                bottomBackgroundColor: "#b02331",
+                              },
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              isBestseller: true,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "1187 ratings",
+                                  ratingCountV2: "1187",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010725",
+                              name: "Mushroom Chow mein",
+                              category: "Fast Food",
+                              imageId: "ywrqrspepzenjtcyq2dw",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 5500,
+                              variants: {
+                                variantGroups: [
+                                  {
+                                    groupId: "3015676",
+                                    name: "Quantity",
+                                    variations: [
+                                      {
+                                        name: "Full",
+                                        price: 4500,
+                                        default: 1,
+                                        id: "10100183",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                      {
+                                        name: "Half",
+                                        id: "10100182",
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "144 ratings",
+                                  ratingCountV2: "144",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010726",
+                              name: "Paneer Chow mein",
+                              category: "Fast Food",
+                              description:
+                                "Stir- fried noodles tossed with thinly sliced veggies aromatic herbs with flavourful sauces with soft paneer.",
+                              imageId: "tygfuwm9p80rhxhvzobu",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 5500,
+                              variants: {
+                                variantGroups: [
+                                  {
+                                    groupId: "3015677",
+                                    name: "Quantity",
+                                    variations: [
+                                      {
+                                        name: "Half",
+                                        default: 1,
+                                        id: "10100184",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                      {
+                                        name: "Full",
+                                        price: 4500,
+                                        id: "10100185",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {
+                                text: "Bestseller",
+                                textColor: "#ffffff",
+                                topBackgroundColor: "#d53d4c",
+                                bottomBackgroundColor: "#b02331",
+                              },
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              isBestseller: true,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.7",
+                                  ratingCount: "460 ratings",
+                                  ratingCountV2: "460",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010727",
+                              name: "Butter Chow mein",
+                              category: "Fast Food",
+                              imageId: "bb479588a1e0241685b69718aacc28a9",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 5500,
+                              variants: {
+                                variantGroups: [
+                                  {
+                                    groupId: "3015678",
+                                    name: "Quantity",
+                                    variations: [
+                                      {
+                                        name: "Half",
+                                        default: 1,
+                                        id: "10100186",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                      {
+                                        name: "Full",
+                                        price: 4500,
+                                        id: "10100187",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "23 ratings",
+                                  ratingCountV2: "23",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010732",
+                              name: "Chilli Potato",
+                              category: "Fast Food",
+                              description:
+                                "A popular Indo-Chinese cuisine which is addictive here, potatoes are boiled and fried , mixed with a variety of spices.",
+                              imageId: "yfs6c9fwtmexdvhwnnj0",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 7000,
+                              variants: {
+                                variantGroups: [
+                                  {
+                                    groupId: "6555719",
+                                    name: "Quantity",
+                                    variations: [
+                                      {
+                                        name: "Half",
+                                        price: 1000,
+                                        id: "21661983",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                      {
+                                        name: "Full",
+                                        price: 5500,
+                                        default: 1,
+                                        id: "21661984",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {
+                                text: "Bestseller",
+                                textColor: "#ffffff",
+                                topBackgroundColor: "#d53d4c",
+                                bottomBackgroundColor: "#b02331",
+                              },
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              isBestseller: true,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.7",
+                                  ratingCount: "686 ratings",
+                                  ratingCountV2: "686",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010738",
+                              name: "Penne Pasta in Red Sauce",
+                              category: "Fast Food",
+                              description:
+                                "Penne cooked to perfection in a tangy fresh Tomato Sauce with Garlic, Olives, Capers, Celery, Olive Oil & Basil topped with Parmesan Cheese",
+                              imageId: "yuzwnxcnvt0sfesnbkyv",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 5000,
+                              variants: {
+                                variantGroups: [
+                                  {
+                                    groupId: "3015683",
+                                    name: "Quantity",
+                                    variations: [
+                                      {
+                                        name: "Half",
+                                        price: 1500,
+                                        default: 1,
+                                        id: "10100196",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                      {
+                                        name: "Full",
+                                        price: 7000,
+                                        id: "10100197",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {
+                                text: "Bestseller",
+                                textColor: "#ffffff",
+                                topBackgroundColor: "#d53d4c",
+                                bottomBackgroundColor: "#b02331",
+                              },
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              isBestseller: true,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.9",
+                                  ratingCount: "1222 ratings",
+                                  ratingCountV2: "1222",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010739",
+                              name: "Penne Pasta in White Sauce",
+                              category: "Fast Food",
+                              description:
+                                "One of our favorite way to serve Pesto, in a creamy white sauce with pasta. Rich, pungent and fresh, it coats the pasta and every bite will satisfy you.",
+                              imageId: "mnqtsaurgkve5oqiw4ip",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 6500,
+                              variants: {
+                                variantGroups: [
+                                  {
+                                    groupId: "3015684",
+                                    name: "Quantity",
+                                    variations: [
+                                      {
+                                        name: "Half",
+                                        default: 1,
+                                        id: "10100198",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                      {
+                                        name: "Full",
+                                        price: 4500,
+                                        id: "10100199",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {
+                                text: "Bestseller",
+                                textColor: "#ffffff",
+                                topBackgroundColor: "#d53d4c",
+                                bottomBackgroundColor: "#b02331",
+                              },
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              isBestseller: true,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.7",
+                                  ratingCount: "815 ratings",
+                                  ratingCountV2: "815",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010740",
+                              name: "Chinese Penne Pasta",
+                              category: "Fast Food",
+                              imageId: "6a170148464578ee38af50c46aa26250",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 5000,
+                              variants: {
+                                variantGroups: [
+                                  {
+                                    groupId: "3015685",
+                                    name: "Quantity",
+                                    variations: [
+                                      {
+                                        name: "Half",
+                                        price: 1500,
+                                        default: 1,
+                                        id: "10100200",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                      {
+                                        name: "Full",
+                                        price: 7000,
+                                        id: "10100201",
+                                        inStock: 1,
+                                        isVeg: 1,
+                                        isEnabled: 1,
+                                      },
+                                    ],
+                                  },
+                                ],
+                              },
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.5",
+                                  ratingCount: "93 ratings",
+                                  ratingCountV2: "93",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010744",
+                              name: "French Fri",
+                              category: "Fast Food",
+                              imageId: "jjsqa7mk3mz8u2gknqpi",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 6000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "182 ratings",
+                                  ratingCountV2: "182",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Breakfast",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "84722611",
+                              name: "Chole Rice",
+                              category: "Breakfast",
+                              description:
+                                "Simple, aromatic, and healthy meal of delicious rice topped with our special chickpea cooked in special blend of spices.",
+                              imageId: "01157beca9162501f73e19fee1334a52",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.7",
+                                  ratingCount: "30 ratings",
+                                  ratingCountV2: "30",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Jaysika Dehradun Special",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "77186415",
+                              name: "Aloo Paneer Bread Roll(2pics)",
+                              category: "Jaysika Dehradun Special",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.5",
+                                  ratingCount: "7 ratings",
+                                  ratingCountV2: "7",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "77186602",
+                              name: "Aloo Onion Bread Roll(2pics)",
+                              category: "Jaysika Dehradun Special",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 7900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.2",
+                                  ratingCount: "18 ratings",
+                                  ratingCountV2: "18",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "77186618",
+                              name: "Paneer Bread Roll(2pics)",
+                              category: "Jaysika Dehradun Special",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 8900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.4",
+                                  ratingCount: "9 ratings",
+                                  ratingCountV2: "9",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "77186636",
+                              name: "Paneer Onion Bread Roll(2pics)",
+                              category: "Jaysika Dehradun Special",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.4",
+                                  ratingCount: "9 ratings",
+                                  ratingCountV2: "9",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "77186642",
+                              name: "Mix Bread Roll",
+                              category: "Jaysika Dehradun Special",
+                              imageId: "7906383d7817ee5c60c5ddd6b4408254",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 11500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.6",
+                                  ratingCount: "3 ratings",
+                                  ratingCountV2: "3",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "77186269",
+                              name: "Aloo Bread Roll(2pics)",
+                              category: "Jaysika Dehradun Special",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 6900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.4",
+                                  ratingCount: "12 ratings",
+                                  ratingCountV2: "12",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Macaroni",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "74242160",
+                              name: "Veg Macornie",
+                              category: "Macaroni",
+                              description: "Serves 1",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                                portionSize: "Serves 1",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.0",
+                                  ratingCount: "39 ratings",
+                                  ratingCountV2: "39",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "74242242",
+                              name: "Veg Paneer Macornie",
+                              category: "Macaroni",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 10500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.3",
+                                  ratingCount: "8 ratings",
+                                  ratingCountV2: "8",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "74242354",
+                              name: "Veg Mushroom Macornie",
+                              category: "Macaroni",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 10500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.6",
+                                  ratingCount: "4 ratings",
+                                  ratingCountV2: "4",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "74242515",
+                              name: "Creame Veg Macornie",
+                              category: "Macaroni",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 10500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.9",
+                                  ratingCount: "3 ratings",
+                                  ratingCountV2: "3",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "74242521",
+                              name: "Veg Butter Macornie",
+                              category: "Macaroni",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 10500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {},
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Punjabi Tadka",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "74241241",
+                              name: "Chole Kulche",
+                              category: "Punjabi Tadka",
+                              description:
+                                "Serves 1 | Baked indian flatbread brushed with butter served with chola",
+                              imageId: "rwgkraho0syymfowosbq",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 7000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                                portionSize: "Serves 1",
+                              },
+                              ribbon: {
+                                text: "Bestseller",
+                                textColor: "#ffffff",
+                                topBackgroundColor: "#d53d4c",
+                                bottomBackgroundColor: "#b02331",
+                              },
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              isBestseller: true,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.6",
+                                  ratingCount: "139 ratings",
+                                  ratingCountV2: "139",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "74241430",
+                              name: "Paneer Stuffed Chole Kulche",
+                              category: "Punjabi Tadka",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.2",
+                                  ratingCount: "43 ratings",
+                                  ratingCountV2: "43",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "74241440",
+                              name: "Cheese Stuffed Chole Kulche",
+                              category: "Punjabi Tadka",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 11000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.3",
+                                  ratingCount: "8 ratings",
+                                  ratingCountV2: "8",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "74241566",
+                              name: "Aloo Stuffed Chole Kulche",
+                              category: "Punjabi Tadka",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.7",
+                                  ratingCount: "10 ratings",
+                                  ratingCountV2: "10",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "74241674",
+                              name: "Paneer Pyaaz Stuffed Chole Kulche",
+                              category: "Punjabi Tadka",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 11000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.1",
+                                  ratingCount: "12 ratings",
+                                  ratingCountV2: "12",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "74241704",
+                              name: "Aloo Pyaaz Stuffed Chole Kulche",
+                              category: "Punjabi Tadka",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 10000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {},
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Special Rice",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010737",
+                              name: "Veg Fried Rice",
+                              category: "Special Rice",
+                              description:
+                                "Serves 1 | Classic indo-chinese rice, with onion, carrot, bell-pepper and cabbage cooked in basic yet irresistible chinese spices.",
+                              imageId: "p8dy7g6rqyw2ancoftwc",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 11000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                                portionSize: "Serves 1",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.0",
+                                  ratingCount: "202 ratings",
+                                  ratingCountV2: "202",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70877850",
+                              name: "Veg Paneer Fried Rice",
+                              category: "Special Rice",
+                              description:
+                                "Rice tossed in a wok with paneer, mix veggies and spices in chinese sauces.",
+                              imageId: "thi9oqvjorgwawsmz0rs",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 13000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {
+                                text: "Bestseller",
+                                textColor: "#ffffff",
+                                topBackgroundColor: "#d53d4c",
+                                bottomBackgroundColor: "#b02331",
+                              },
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              isBestseller: true,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.5",
+                                  ratingCount: "153 ratings",
+                                  ratingCountV2: "153",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70877907",
+                              name: "Veg Butter Paneer Fried Rice",
+                              category: "Special Rice",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 14000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "1.9",
+                                  ratingCount: "8 ratings",
+                                  ratingCountV2: "8",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70877940",
+                              name: "Veg Chilli Garlic Fried Rice",
+                              category: "Special Rice",
+                              description:
+                                "A flavorful combination of rice and assorted veggies cooked in a fragrant and flavorful masala seasoned with Indian whole spices.",
+                              imageId: "5408da03311bdd87d2f49ec99b1abe6f",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 13000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.2",
+                                  ratingCount: "15 ratings",
+                                  ratingCountV2: "15",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70879621",
+                              name: "Veg Butter Fried Rice",
+                              category: "Special Rice",
+                              imageId: "fa4499cd4fd00cd0cf689f1f7198cd55",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 13000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.5",
+                                  ratingCount: "3 ratings",
+                                  ratingCountV2: "3",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70879625",
+                              name: "Veg Kabab Fried Rice",
+                              category: "Special Rice",
+                              imageId: "f3c5ca9a1a55ac60122a097a0aa3de5b",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 13000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.0",
+                                  ratingCount: "7 ratings",
+                                  ratingCountV2: "7",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70879635",
+                              name: "Veg Butter Mushroom Fried Rice",
+                              category: "Special Rice",
+                              imageId: "25c4bdf09c8e982d014245db0d125664",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 14000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.5",
+                                  ratingCount: "8 ratings",
+                                  ratingCountV2: "8",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70879679",
+                              name: "Veg Butter+ Mushroom+ Paneer+ Kabab Fried Rice",
+                              category: "Special Rice",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 14900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.7",
+                                  ratingCount: "24 ratings",
+                                  ratingCountV2: "24",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70879741",
+                              name: "Veg Mushroom Fried Rice",
+                              category: "Special Rice",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 13000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.3",
+                                  ratingCount: "6 ratings",
+                                  ratingCountV2: "6",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Rolls",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010730",
+                              name: "Veg Spring Roll",
+                              category: "Rolls",
+                              description:
+                                "Serves 1 | Deep-Fried, Stuffed Rolls Packed With Seasoned Assorted Veggies.",
+                              imageId: "xbhu9ienelcrdn76bpbi",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 8500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                                portionSize: "Serves 1",
+                              },
+                              ribbon: {
+                                text: "Bestseller",
+                                textColor: "#ffffff",
+                                topBackgroundColor: "#d53d4c",
+                                bottomBackgroundColor: "#b02331",
+                              },
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              isBestseller: true,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.6",
+                                  ratingCount: "1198 ratings",
+                                  ratingCountV2: "1198",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50506553",
+                              name: "Veg Paneer Spring Roll",
+                              category: "Rolls",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "30 ratings",
+                                  ratingCountV2: "30",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50506557",
+                              name: "Veg Paneer Malai Spring Roll",
+                              category: "Rolls",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 11000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.1",
+                                  ratingCount: "16 ratings",
+                                  ratingCountV2: "16",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50506554",
+                              name: "Veg Cheese Spring Roll",
+                              category: "Rolls",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.5",
+                                  ratingCount: "23 ratings",
+                                  ratingCountV2: "23",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50506555",
+                              name: "Veg Malai Spring Roll",
+                              category: "Rolls",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.4",
+                                  ratingCount: "25 ratings",
+                                  ratingCountV2: "25",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50506558",
+                              name: "Veg Cheese Malai Spring Roll",
+                              category: "Rolls",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 11000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.0",
+                                  ratingCount: "6 ratings",
+                                  ratingCountV2: "6",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70879326",
+                              name: "Veg Gravy Spring Roll",
+                              category: "Rolls",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 12000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {},
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Kabab",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70624138",
+                              name: "Veg Malai Kabab",
+                              category: "Kabab",
+                              description: "Serves 1",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                                portionSize: "Serves 1",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.9",
+                                  ratingCount: "52 ratings",
+                                  ratingCountV2: "52",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70623877",
+                              name: "Veg Kabab( With Mozzarella Cheese)",
+                              category: "Kabab",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.7",
+                                  ratingCount: "13 ratings",
+                                  ratingCountV2: "13",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50509744",
+                              name: "Veg Kabab",
+                              category: "Kabab",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 8500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.1",
+                                  ratingCount: "93 ratings",
+                                  ratingCountV2: "93",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70624163",
+                              name: "Dry Gravy Kabab",
+                              category: "Kabab",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 11500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "7 ratings",
+                                  ratingCountV2: "7",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70624406",
+                              name: "Veg Gravy Kabab",
+                              category: "Kabab",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 10500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.0",
+                                  ratingCount: "4 ratings",
+                                  ratingCountV2: "4",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Sandwich",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70341963",
+                              name: "Veg Sandwich",
+                              category: "Sandwich",
+                              description:
+                                "Serves 1 | A flavorsome sandwich perfectly seasoned mixed vegetable.",
+                              imageId: "f7569a05684ba0e34de37e79952e29bb",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 7500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                                portionSize: "Serves 1",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.5",
+                                  ratingCount: "16 ratings",
+                                  ratingCountV2: "16",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70341968",
+                              name: "Veg Paneer Sandwich",
+                              category: "Sandwich",
+                              description:
+                                "The all time favorite mouthwatering paneer stuffed between two slices of toasted bread - perfect snack to satisfy your hunger.",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 8500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "17 ratings",
+                                  ratingCountV2: "17",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70342034",
+                              name: "Veg Cheese Sandwich",
+                              category: "Sandwich",
+                              description:
+                                "A scrumptious sandwich made by stuffing mixed vegetables and cheese in grilled bread .",
+                              imageId: "k08a9zcmwwmhq3zvwmjk",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 10000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.7",
+                                  ratingCount: "11 ratings",
+                                  ratingCountV2: "11",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "70342323",
+                              name: "Veg Potato Sandwich ",
+                              category: "Sandwich",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {},
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Pav Bhaji",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "69860310",
+                              name: "Butter Mushroom Pav Bhaji",
+                              category: "Pav Bhaji",
+                              description: "Serves 1",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                                portionSize: "Serves 1",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {},
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "69860458",
+                              name: "Mozzarella Cheese Pav Bhaji",
+                              category: "Pav Bhaji",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "1.4",
+                                  ratingCount: "6 ratings",
+                                  ratingCountV2: "6",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "69860309",
+                              name: "Butter Paneer Pav Bhaji",
+                              category: "Pav Bhaji",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.3",
+                                  ratingCount: "18 ratings",
+                                  ratingCountV2: "18",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "69860306",
+                              name: "Paneer Pav Bhaji",
+                              category: "Pav Bhaji",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 7500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.4",
+                                  ratingCount: "30 ratings",
+                                  ratingCountV2: "30",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "69860456",
+                              name: "Amul Butter Pav Bhaji",
+                              category: "Pav Bhaji",
+                              description:
+                                "Prepared with pure masala. And this food is very popular fast food with butter pav and bhaji.",
+                              imageId: "lfpoxszztad67foipwxi",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 8500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.4",
+                                  ratingCount: "183 ratings",
+                                  ratingCountV2: "183",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "69860303",
+                              name: "Plain Pav Bhaji",
+                              category: "Pav Bhaji",
+                              imageId: "169f2713e17d6a49be2e03cb6956cb27",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 6500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {
+                                text: "Bestseller",
+                                textColor: "#ffffff",
+                                topBackgroundColor: "#d53d4c",
+                                bottomBackgroundColor: "#b02331",
+                              },
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              isBestseller: true,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "51 ratings",
+                                  ratingCountV2: "51",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Hot Soups",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "58534570",
+                              name: "Mix Veg Soup",
+                              category: "Hot Soups",
+                              description: "Serves 1",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 7000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                                portionSize: "Serves 1",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.9",
+                                  ratingCount: "7 ratings",
+                                  ratingCountV2: "7",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "69686665",
+                              name: "Paneer Soup",
+                              category: "Hot Soups",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 7000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.9",
+                                  ratingCount: "6 ratings",
+                                  ratingCountV2: "6",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "58534572",
+                              name: "Manchow Soup",
+                              category: "Hot Soups",
+                              description:
+                                "A comforting chinese - style thick mix vegetable soup .",
+                              imageId: "mnm5lsiejbjft75biizc",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 7000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.3",
+                                  ratingCount: "49 ratings",
+                                  ratingCountV2: "49",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "69686661",
+                              name: "Hot & Sour Soup",
+                              category: "Hot Soups",
+                              description:
+                                "A delightfully flavor-packed hot and sour soup with chopped veggies - perfect to satiate your cravings.",
+                              imageId: "609fae21559d17311f73995f72513410",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 7000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.5",
+                                  ratingCount: "13 ratings",
+                                  ratingCountV2: "13",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010746",
+                              name: "Mushroom Soup",
+                              category: "Hot Soups",
+                              imageId: "545cbc408d2f9c0afb48e9a08e7508bd",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 7000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.8",
+                                  ratingCount: "61 ratings",
+                                  ratingCountV2: "61",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "69686648",
+                              name: "Veg. Soup",
+                              category: "Hot Soups",
+                              imageId: "69d9008981893555671dfd5e01a4a40b",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 5000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "1.1",
+                                  ratingCount: "5 ratings",
+                                  ratingCountV2: "5",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Jaysika's Special Snacks",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "59138589",
+                              name: "Paneer Malai Tikka (capsicum,onion,tomato)",
+                              category: "Jaysika's Special Snacks",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 15100,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.5",
+                                  ratingCount: "9 ratings",
+                                  ratingCountV2: "9",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "59138067",
+                              name: "Paneer Tikka Fried ( Capsicum , Onion, Tomato)",
+                              category: "Jaysika's Special Snacks",
+                              imageId: "ayl1vn0bhr5upotj7myn",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 14000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.0",
+                                  ratingCount: "159 ratings",
+                                  ratingCountV2: "159",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "59138064",
+                              name: "Paneer Stuffed Bread Pakoda (4pcs)",
+                              category: "Jaysika's Special Snacks",
+                              imageId: "p7fd39tpe9rc2l62oyjd",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.5",
+                                  ratingCount: "52 ratings",
+                                  ratingCountV2: "52",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "59138063",
+                              name: "Bread Pakoda (4pcs)",
+                              category: "Jaysika's Special Snacks",
+                              imageId: "sodx24wjnfhjotehr10g",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 7500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "32 ratings",
+                                  ratingCountV2: "32",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Momos",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "106457424",
+                              name: "Veg Fried Momos(full)",
+                              category: "Momos",
+                              imageId: "400594e1ed1e0d8804a8efa6d031f073",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 10500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.9",
+                                  ratingCount: "12 ratings",
+                                  ratingCountV2: "12",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "106461325",
+                              name: "Veg Steam Momos(full)",
+                              category: "Momos",
+                              imageId: "3eef3444b2de7b0fe1f19e6763c78b0a",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 8500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {
+                                text: "Bestseller",
+                                textColor: "#ffffff",
+                                topBackgroundColor: "#d53d4c",
+                                bottomBackgroundColor: "#b02331",
+                              },
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              isBestseller: true,
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.1",
+                                  ratingCount: "143 ratings",
+                                  ratingCountV2: "143",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "68935073",
+                              name: "Manchurian Momos",
+                              category: "Momos",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 12900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {},
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "68935070",
+                              name: "Paneer Chilli Momos",
+                              category: "Momos",
+                              imageId: "06fa2fb0f40136ba9f8f6bcdd76516c5",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 12900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.2",
+                                  ratingCount: "16 ratings",
+                                  ratingCountV2: "16",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "68934991",
+                              name: "Veg Gravy Momos ",
+                              category: "Momos",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 13000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.1",
+                                  ratingCount: "12 ratings",
+                                  ratingCountV2: "12",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50940221",
+                              name: "Kfc Momos ( 8pcs)",
+                              category: "Momos",
+                              description:
+                                "Crispy dumlings stuffed with healthy veggies, coated with tandoori marination and tandoored. Served with mint chutney and spicy momo sauce",
+                              imageId: "4f96a76b9817d7e6e2fa070ba50efa9c",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 13000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.0",
+                                  ratingCount: "148 ratings",
+                                  ratingCountV2: "148",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "106461327",
+                              name: "Veg Malai Momos(full)",
+                              category: "Momos",
+                              imageId: "d1b84169f45f99dee2432da9c61658ff",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 12000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.8",
+                                  ratingCount: "37 ratings",
+                                  ratingCountV2: "37",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Burgers",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010741",
+                              name: "Veg Burger",
+                              category: "Burgers",
+                              description:
+                                "Serves 1 | A delightfully juicy burger with a crunchy patty spread on a bed of tomatoes and onions.",
+                              imageId: "sxf3bap31f8jimwbjfby",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 6500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                                portionSize: "Serves 1",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.5",
+                                  ratingCount: "435 ratings",
+                                  ratingCountV2: "435",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50509723",
+                              name: "Veg Double Tikki Burger ( Cheese + Paneer)",
+                              category: "Burgers",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 12000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "1.5",
+                                  ratingCount: "7 ratings",
+                                  ratingCountV2: "7",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50506381",
+                              name: "Double Tikki Burger",
+                              category: "Burgers",
+                              imageId: "b1756c017668ec09efbca266da65bc15",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 8000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.1",
+                                  ratingCount: "4 ratings",
+                                  ratingCountV2: "4",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50506378",
+                              name: "Veg Double Cheese Burger",
+                              category: "Burgers",
+                              description:
+                                "An appetizing tasteful burger filled with vegetable patty and double cheese slices between hot buns.",
+                              imageId: "c18e255ba4df71fb257a3fa1a2630012",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 9900,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.9",
+                                  ratingCount: "3 ratings",
+                                  ratingCountV2: "3",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50509721",
+                              name: "Cheese Burger",
+                              category: "Burgers",
+                              description:
+                                "A delightfully flavor-packed burger with veggies and cheese - perfect to satisfy your cravings.",
+                              imageId: "b3cf579506f3fd36bd9847ae7730c995",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 8000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.9",
+                                  ratingCount: "41 ratings",
+                                  ratingCountV2: "41",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "33010742",
+                              name: "Veg Paneer Burger",
+                              category: "Burgers",
+                              imageId: "v4fiqklvy6jhl94j5nkm",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 7500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.3",
+                                  ratingCount: "222 ratings",
+                                  ratingCountV2: "222",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      title: "Chinese Combo",
+                      itemCards: [
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50716209",
+                              name: "2 B F D Combo ",
+                              category: "Chinese Combo",
+                              description:
+                                "Serves 1 | 2 Burger + French Fried + Mini Cold Drink.\n",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 13500,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                                portionSize: "Serves 1",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "3.7",
+                                  ratingCount: "87 ratings",
+                                  ratingCountV2: "87",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50716217",
+                              name: "Paneer Manchurian With Fried Rice",
+                              category: "Chinese Combo",
+                              description: "With free mini cold drink.",
+                              imageId: "baa0dc6095dd2eec882e66c7d9d982fc",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 21000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "2.5",
+                                  ratingCount: "13 ratings",
+                                  ratingCountV2: "13",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50716246",
+                              name: "Manchurian With Fried Rice",
+                              category: "Chinese Combo",
+                              description: "With free mini cold drink.",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 18000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.0",
+                                  ratingCount: "110 ratings",
+                                  ratingCountV2: "110",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                        {
+                          card: {
+                            "@type":
+                              "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            info: {
+                              id: "50716257",
+                              name: "Chill Paneer With Fried Rice ",
+                              category: "Chinese Combo",
+                              description: "With free mini cold drink.",
+                              inStock: 1,
+                              isVeg: 1,
+                              price: 23000,
+                              variants: {},
+                              variantsV2: {},
+                              itemAttribute: {
+                                vegClassifier: "VEG",
+                              },
+                              ribbon: {},
+                              type: "ITEM",
+                              itemBadge: {},
+                              badgesV2: {},
+                              ratings: {
+                                aggregatedRating: {
+                                  rating: "4.6",
+                                  ratingCount: "24 ratings",
+                                  ratingCountV2: "24",
+                                },
+                              },
+                            },
+                            analytics: {},
+                            hideRestaurantDetails: true,
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.RestaurantLicenseInfo",
+                      type: "FSSAI",
+                      imageId: "fssai_final_edss9i",
+                      text: ["License No. 22621028000374"],
+                    },
+                  },
+                },
+                {
+                  card: {
+                    card: {
+                      "@type":
+                        "type.googleapis.com/swiggy.presentation.food.v2.RestaurantAddress",
+                      name: "Jaysika DDN Fast Food",
+                      area: "Tilak Road",
+                      completeAddress:
+                        "tilak road, opp ritual salon, rishikesh",
+                    },
+                  },
+                },
+              ],
+            },
+          },
+        },
+      },
+    ],
+    firstOffsetRequest: true,
+    isQCLink: false,
+  },
+  tid: "c0f577fe-1e13-4d1a-93a8-7e9fde40e2f5",
+  sid: "c9n3f5d6-b238-4fa1-a317-f6f1658da5ed",
+  deviceId: "6ae9d5c8-5eeb-4e6e-a4d4-a41546a9b619",
+  csrfToken: "nW7qjxr4QEJE-P9Q4dSqVuiFDX5oIrcLlKHpi1HA",
+};
+
+export default menu;

@@ -51,6 +51,7 @@ const Body = () => {
       <div className="p-7 m-auto bg-red-500 ">
         <form className="flex flex-col text-right m-auto" onSubmit={searchAlgo}>
           <input
+            data-testid="search-input"
             type="text"
             className=" w-52 focus:bg-green-50 placeholder:italic placeholder:text-green-600 bg-gray-50 rounded-md m-auto px-2 py-1"
             value={searchText}
