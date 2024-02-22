@@ -9,20 +9,17 @@ const Cart = () => {
   };
 
   return (
-    <div className="m-10 flex flex-col">
-      <h1 className="m-5 flex align-middle justify-center font-bold text-lg">
+    <div className=" bg-gradient-to-b from-whitebg-gradient-to-r from-red-500 to-orange-500 min-h-screen p-10 flex flex-col items-center">
+      <h1 className="m-5 flex items-center justify-center font-bold text-lg">
         This is Cart Page
       </h1>
       <button
-        className=" text-white bg-green-500 border rounded-md p-2 m-auto"
+        className=" text-white bg-green-500 border rounded-md p-2 "
         onClick={() => handleClearCart()}
       >
         clear
       </button>
-      <ul
-        data-testid="cart-items"
-        className=" flex m-10 flex-wrap justify-center"
-      >
+      <ul data-testid="cart-items" className=" flex m-10 flex-wrap ">
         {cartItems.map((item) => {
           const data = item?.card?.info;
           return <FoodItems item={data} key={data?.id} />;

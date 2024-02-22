@@ -6,7 +6,7 @@ import Body from "./components/Body";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 // import About from "./components/about.js";
 import Error from "./components/error";
-import Contact from "./components/contact";
+import Contact from "./components/Contact.js";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Profile from "./components/ProficeClass";
 import Shimmer from "./components/Shimmer";

@@ -24,9 +24,9 @@ class Profile extends React.Component {
     console.log("Child - render");
     const { userInfo } = this?.state;
     return (
-      <div>
+      <div className="text-center">
         <img
-          className="m-10 p-2 rounded-full h-72"
+          className=" m-auto p-8 rounded-full h-72 "
           src={userInfo.avatar_url}
           alt="userImage"
         />
