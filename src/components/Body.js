@@ -43,7 +43,7 @@ const Body = () => {
   const count = 10;
   if (!allRestaurants) return null;
   //If restaurant is empty => render Shimmer UI
-  return allRestaurants?.length === 0 ? (
+  return allRestaurants?.length < 1 ? (
     <Shimmer count={count} />
   ) : (
     //If restaurant has data => render actual data
