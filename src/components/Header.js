@@ -1,30 +1,59 @@
 import cart from "../assets/img/cart.png";
+import LoginPage from "./LoginPage.js";
 import FoodVillaLogo1 from "../assets/img/logo.js";
 import { Link } from "react-router-dom";
 import useOnline from "../utils/useOnline";
-import useAuth from "../utils/useAuth";
 import UserContext from "../utils/UserContext.js";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 const Header = () => {
-  const [logIn, toggleLogIn] = useAuth(false);
+  const { user, setUser } = useContext(UserContext);
+
+  const [islogin, setIsLogin] = useState(false);
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const isOnline = useOnline();
-  const textClass = isOnline ? "text-green-700" : "text-red-600";
-  const linkClass = "m-0 p-3 text-white hover:text-red-900 ";
-  const { user } = useContext(UserContext);
+  const linkClass = "m-1 p-3 text-white hover:text-red-900 ";
   const cartItems = useSelector((store) => store.cart.items);
+  const handleNavbar = (e) => {
+    e.preventDefault();
+    setIsNavbarOpen(!isNavbarOpen);
+  };
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    setIsLogin(!islogin);
+
+    console.log(e.target.value);
+  };
+
+  useEffect(() => {
+    const data = localStorage.getItem("userData");
+    const parsedData = JSON.parse(data);
+    setUser(parsedData);
+  }, []);
   return (
     <>
       <nav className="z-10 p-0 m-0 sticky top-0  flex justify-between bg-orange-500 shadow-lg">
         <Link
           to="/"
           data-testid="logo"
-          className="flex justify-center items-center"
+          className={
+            isNavbarOpen
+              ? "flex flex-initial mt-2"
+              : "flex justify-center items-center"
+          }
         >
           {FoodVillaLogo1}
         </Link>
 
-        <ul className="hidden lg:flex md:flex justify-center items-center ">
+        <ul
+          className={
+            isNavbarOpen
+              ? "lg:flex lg:flex-row h-auto flex flex-col justify-center items-center transition-transform duration-300 ease-linear"
+              : "lg:flex lg:flex-row lg:h-auto sm:h-0 md:hidden justify-center items-center "
+          }
+        >
+          <h1 className={linkClass}>Welcome {user.name}</h1>
           <Link to="/" className={linkClass}>
             <li className="">Home</li>
           </Link>
@@ -52,16 +81,25 @@ const Header = () => {
             {cartItems.length}{" "}
           </Link>
         </ul>
-        <div className="flex items-center">
+        <div
+          onClick={handleNavbar}
+          className="lg:hidden md:flex sm:flex flex-col h-9 m-1 p-1 border border-white rounded-md"
+        >
+          <div className=" w-5  pt-1 border border-white rounded-md "></div>
+          <div className=" w-5 mt-1 pt-1 border bo0rder-white rounded-md "></div>
+          <div className=" w-5 mt-1 pt-1 border border-white rounded-md "></div>
+        </div>
+
+        <div className="lg:flex sm:hidden items-center">
           <button
             className=" w-24 flex align-middle justify-center bg-green-500 hover:bg-green-600 p-1 m-2  text-white rounded-md transform transition-transform duration-300 ease-in-out active:scale-95"
-            onClick={toggleLogIn}
+            onClick={handleLogin}
           >
-            Log {logIn ? " In" : " Out"}
+            Log {user.name !== "guest" ? " Out" : " In"}
           </button>
-
-          <span data-testid="online-status" className={`m-1 ${textClass}`}>
-            {isOnline ? "✅" : "❌"} {" " + user.name + " "}
+          {islogin && <LoginPage login={islogin} setLogin={setIsLogin} />}
+          <span data-testid="online-status" className="m-1">
+            {isOnline ? "✅" : "❌"}
           </span>
         </div>
       </nav>

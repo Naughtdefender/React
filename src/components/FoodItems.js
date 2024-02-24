@@ -17,7 +17,7 @@ const FoodItems = ({ item }) => {
         <img
           src={IMG_URL_CDN + imageId}
           alt={name}
-          className="m-1 w-40 border rounded-md"
+          className="m-1 h-40 w-40 lg:w-40 sm:h-28 sm:w-28 border rounded-md"
         />
       </div>
       <h4 className="m-1 text-sm">{description}</h4>

@@ -26,8 +26,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const AppLayout = () => {
   const [user, setUser] = useState({
-    name: "Kshitiz",
-    email: "kshitizsharma405@gmail.com",
+    name: "guest",
+    email: "",
   });
   return (
     <Provider store={store}>

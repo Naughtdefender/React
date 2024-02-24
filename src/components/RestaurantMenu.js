@@ -56,23 +56,30 @@ const RestaurantMenu = function () {
           <h1 className="m-auto text-center text-2xl font-bold ">Menu</h1>
           <ul
             data-testid="restaurant-menu"
-            className="flex flex-col py-12 px-16"
+            className="flex flex-col py-12 lg:px-96 md:px-44 sm:px-28"
           >
-            {restaurantMenuItem.map((item, i) => {
+            {restaurantMenuItem.map((item) => {
               const price = Math.floor(item?.card?.info?.price / 100) + ".00";
               return (
-                <li className="flex justify-between" key={i}>
-                  <h4 className=" font-medium text-white">
+                <li className="flex justify-between" key={item?.card?.info?.id}>
+                  <p className=" font-medium text-white">
                     {item?.card?.info?.name}
                     <span className="font-thin block ">₹{price}</span>
-                  </h4>
-                  <button
-                    className=" w-12 m-2 text-white border-black rounded-md bg-green-500 active:scale-95 "
-                    data-testid="add-btn"
-                    onClick={() => addFoodItem(item)}
-                  >
-                    +
-                  </button>
+                  </p>
+                  <div className="relative flex flex-col items-center p-2">
+                    <img
+                      className="lg:w-28 md:w-16 md:-16 sm:w-16 lg:h-28 sm:h-16 border-black rounded-md"
+                      src={`${IMG_URL_CDN}${item?.card?.info?.imageId}`}
+                      alt={item?.card?.info?.name}
+                    />
+                    <button
+                      className="absolute  bottom-1  w-12 mb-2 text-white border-black rounded-md bg-green-500 active:scale-95 "
+                      data-testid="add-btn"
+                      onClick={() => addFoodItem(item)}
+                    >
+                      +
+                    </button>
+                  </div>
                 </li>
               );
             })}

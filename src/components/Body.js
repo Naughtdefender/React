@@ -10,7 +10,6 @@ const Body = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
-  const { user, setUser } = useContext(UserContext);
   const searchAlgo = (e) => {
     e.preventDefault();
     const data = filterData(searchText, allRestaurants);
@@ -65,26 +64,6 @@ const Body = () => {
           >
             Search
           </button>
-          <input
-            className="w-auto my-5 m-auto border rounded-md"
-            value={user.name}
-            onChange={(e) => {
-              setUser({
-                ...user,
-                name: e?.target?.value,
-              });
-            }}
-          />
-          <input
-            className="w-56 my-5 m-auto border rounded-md"
-            value={user.email}
-            onChange={(e) => {
-              setUser({
-                ...user,
-                email: e?.target?.value,
-              });
-            }}
-          />
         </form>
       </div>
       <h1 className="m-auto text-center text-3xl font-semibold text-white  bg-red-500 border-b-2 border-white">
