@@ -12,7 +12,9 @@ const Header = () => {
   const [islogin, setIsLogin] = useState(false);
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const isOnline = useOnline();
-  const linkClass = "m-1 p-3 text-white hover:text-red-900 ";
+  const linkClass = isNavbarOpen
+    ? "m-1 p-3 lg:flex lg:flex-row text-white hover:text-red-900 "
+    : "hidden m-1 p-3 lg:flex lg:flex-row text-white hover:text-red-900";
   const cartItems = useSelector((store) => store.cart.items);
   const handleNavbar = (e) => {
     e.preventDefault();
@@ -48,8 +50,8 @@ const Header = () => {
         <ul
           className={
             isNavbarOpen
-              ? "lg:flex lg:flex-row h-auto flex flex-col justify-center items-center transition-transform duration-300 ease-linear"
-              : "lg:flex lg:flex-row lg:h-auto sm:h-0 md:hidden justify-center items-center "
+              ? "lg:flex md:flex md:flex-col lg:flex-row h-auto flex flex-col justify-center items-center transition-transform duration-300 ease-linear"
+              : "lg:flex lg:flex-row lg:h-auto sm:h-0 md:h-0  justify-center items-center "
           }
         >
           <h1 className={linkClass}>Welcome {user.name}</h1>
@@ -69,7 +71,7 @@ const Header = () => {
           <Link
             to="/cart"
             data-testid="cart-content"
-            className="flex flex-row align-middle  text-white m-2"
+            className={`${linkClass} flex flex-row align-middle  text-white m-2`}
           >
             <img
               src={cart}
@@ -79,6 +81,18 @@ const Header = () => {
             />{" "}
             {cartItems.length}{" "}
           </Link>
+          <div className={`${linkClass}flex items-center`}>
+            <button
+              className=" w-24 flex align-middle justify-center bg-green-500 hover:bg-green-600 p-1 m-2  text-white rounded-md transform transition-transform duration-300 ease-in-out active:scale-95"
+              onClick={handleLogin}
+            >
+              Log {user.name !== "guest" ? " Out" : " In"}
+            </button>
+            {islogin && <LoginPage login={islogin} setLogin={setIsLogin} />}
+            <span data-testid="online-status" className="m-1">
+              {isOnline ? "✅" : "❌"}
+            </span>
+          </div>
         </ul>
         <div
           onClick={handleNavbar}
@@ -87,19 +101,6 @@ const Header = () => {
           <div className=" w-5  pt-1 border border-white rounded-md "></div>
           <div className=" w-5 mt-1 pt-1 border bo0rder-white rounded-md "></div>
           <div className=" w-5 mt-1 pt-1 border border-white rounded-md "></div>
-        </div>
-
-        <div className="lg:flex sm:hidden items-center">
-          <button
-            className=" w-24 flex align-middle justify-center bg-green-500 hover:bg-green-600 p-1 m-2  text-white rounded-md transform transition-transform duration-300 ease-in-out active:scale-95"
-            onClick={handleLogin}
-          >
-            Log {user.name !== "guest" ? " Out" : " In"}
-          </button>
-          {islogin && <LoginPage login={islogin} setLogin={setIsLogin} />}
-          <span data-testid="online-status" className="m-1">
-            {isOnline ? "✅" : "❌"}
-          </span>
         </div>
       </nav>
     </>

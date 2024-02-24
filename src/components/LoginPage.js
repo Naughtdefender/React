@@ -44,7 +44,9 @@ const LoginPage = ({ login, setLogin }) => {
   };
   return (
     <section
-      className={" absolute border rounded-md py-2 right-8 top-16 bg-slate-300"}
+      className={
+        " absolute sm:top-96 sm:right-52 border rounded-md py-2 lg:right-8 lg:top-16 bg-slate-300"
+      }
     >
       {validUsername.name && (
         <h1 className="bg-red-300 text-center  text-white">
