@@ -22,14 +22,13 @@ const Header = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     setIsLogin(!islogin);
-
     console.log(e.target.value);
   };
 
   useEffect(() => {
     const data = localStorage.getItem("userData");
     const parsedData = JSON.parse(data);
-    setUser(parsedData);
+    setUser({ ...user, ...parsedData });
   }, []);
   return (
     <>
