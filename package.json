@@ -20,8 +20,8 @@
     "@reduxjs/toolkit": "^2.1.0",
     "babel-plugin-macros": "^3.1.0",
     "glob": "^11.0.0",
-    "react": "file:",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-redux": "^9.1.0",
     "react-router-dom": "^6.17.0"
   },
