@@ -1,5 +1,5 @@
 import RestaurantCard from "./RestaurantCard";
-import { useEffect, useState, useRef, useContext } from "react";
+import React, { useEffect, useState, useRef, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { restaurantListNew, swiggyURLRishikesh } from "../constants";

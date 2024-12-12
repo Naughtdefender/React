@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer";
 import { IMG_URL_CDN, restaurantListNew } from "../constants";
-import { Suspense, useState, useEffect } from "react";
+import React, { Suspense, useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addItem } from "../utils/cartSlice";
 import restaurantMenuLatest, { RESTAURANT_DATA } from "../mocks/data.js";

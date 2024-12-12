@@ -1,5 +1,5 @@
+import React, { Component } from "react";
 import Profile from "./ProfileClass.js";
-import { Component } from "react";
 import UserContext from "../utils/UserContext";
 const About2 = function () {
   return (

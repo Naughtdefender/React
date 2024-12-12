@@ -1,3 +1,4 @@
+import React from "react";
 import { useDispatch } from "react-redux";
 import { IMG_URL_CDN } from "../constants";
 import { removeItem } from "../utils/cartSlice";

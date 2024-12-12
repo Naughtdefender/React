@@ -1,1 +1,1 @@
-restaurant-card
+restaurant - card;

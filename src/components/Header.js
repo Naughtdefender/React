@@ -1,3 +1,4 @@
+import React from "react";
 import cart from "../assets/img/cart.png";
 import LoginPage from "./LoginPage.js";
 import FoodVillaLogo1 from "../assets/img/logo.js";
