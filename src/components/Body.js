@@ -2,9 +2,8 @@ import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState, useRef, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
-import { swiggyURLRishikesh } from "../constants";
+import { restaurantListNew, swiggyURLRishikesh } from "../constants";
 import { filterData } from "../utils/helper";
-import UserContext from "../utils/UserContext";
 
 const Body = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);
@@ -18,18 +17,27 @@ const Body = () => {
 
   useEffect(() => {
     //API CALL
-    getRestaurants(swiggyURLRishikesh);
+    // getRestaurants(swiggyURLRishikesh);
+    getRestaurants();
   }, []);
+  console.log(restaurantListNew);
   async function getRestaurants(url) {
-    const data = await fetch(url);
-    const json = await data.json();
-    const restaurantList =
-      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+    // const data = await fetch(url);
+    // const json = await data.json();
+    const [data] = restaurantListNew;
+    const latestRestaurantList =
+      data?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants;
-    setAllRestaurants(restaurantList);
-    setFilteredRestaurants(restaurantList);
+    console.log(latestRestaurantList);
+    // const restaurantList =
+    //   json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+    //     ?.restaurants;
+
+    setAllRestaurants(latestRestaurantList);
+    setFilteredRestaurants(latestRestaurantList);
   }
 
+  console.log(restaurantListNew);
   //Conditional Rendering
   //if Restaurants are not there => dont render anything (Early Return)
 

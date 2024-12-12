@@ -1,35 +1,49 @@
 import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer";
-import { IMG_URL_CDN } from "../constants";
+import { IMG_URL_CDN, restaurantListNew } from "../constants";
 import { Suspense, useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addItem } from "../utils/cartSlice";
+import restaurantMenuLatest, { RESTAURANT_DATA } from "../mocks/data.js";
+
 const RestaurantMenu = function () {
   const [restaurantMenuItem, setRestaurantMenuItem] = useState([{}]);
   const [restaurant, setRestaurant] = useState([{}]);
   const { id } = useParams();
-  const url =
-    "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.1056329&lng=78.2953055&restaurantId=" +
-    id +
-    "&catalog_qa=undefined&submitAction=ENTER";
+  console.log(id);
+  // const url =
+  //   "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.1056329&lng=78.2953055&restaurantId=" +
+  //   id +
+  //   "&catalog_qa=undefined&submitAction=ENTER";
 
   const dispatch = useDispatch();
   const addFoodItem = (item) => {
     dispatch(addItem(item));
   };
   useEffect(() => {
-    getRestaurantinfo();
+    getRestaurantInfo();
   }, []);
-  const getRestaurantinfo = async () => {
-    const response = await fetch(url);
-    const json = await response.json();
+  const getRestaurantInfo = async () => {
+    // const response = await fetch(url);
+    // const json = await response.json();
+    const [data] = RESTAURANT_DATA;
+    const [resMenuData] = restaurantMenuLatest;
+
     const resMenu =
-      json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card
-        ?.card?.itemCards;
-    const resData = json?.data?.cards[2]?.card?.card?.info;
-    setRestaurant(resData);
+      resMenuData?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]
+        ?.card?.card?.itemCards;
+    // [0]?.card?.info;
+    const resData =
+      data?.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+    // [0]?.info;
+
+    const filteredRestaurant = (restaurants) =>
+      restaurants.filter((restaurant) => restaurant?.info?.id === id)[0];
+    setRestaurant(filteredRestaurant(resData)?.info || []);
     setRestaurantMenuItem(resMenu);
   };
+  console.log(restaurant);
+  console.log(restaurantMenuItem);
   const count = 10;
   return (
     <Suspense fallback={<Shimmer count={count} />}>

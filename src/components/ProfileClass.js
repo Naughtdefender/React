@@ -12,7 +12,7 @@ class Profile extends React.Component {
     };
   }
   async componentDidMount() {
-    const data = await fetch("https://api.github.com/users/Naughtdefender");
+    const data = await fetch("https://api.github.com/users/kshitizSharma405");
     const json = await data.json();
     this.setState({
       userInfo: json,

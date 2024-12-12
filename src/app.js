@@ -8,7 +8,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Error from "./components/Error";
 import Contact from "./components/Contact.js";
 import RestaurantMenu from "./components/RestaurantMenu";
-import Profile from "./components/ProficeClass";
+import Profile from "./components/ProfileClass.js";
 import Shimmer from "./components/Shimmer";
 import UserContext from "./utils/UserContext.js";
 import { Provider } from "react-redux";
@@ -45,49 +45,61 @@ const AppLayout = () => {
   );
 };
 
-const appRouter = createBrowserRouter([
+const appRouter = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <AppLayout />,
+      errorElement: <Error />,
+      children: [
+        {
+          path: "/",
+          element: <Body />,
+        },
+        {
+          path: "/about",
+          element: (
+            <Suspense fallback={<h1>Loading...</h1>}>
+              <About />
+            </Suspense>
+          ),
+          children: [
+            {
+              path: "profile",
+              element: <Profile />,
+            },
+          ],
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
+        {
+          path: "/restaurant/:id",
+          element: <RestaurantMenu />,
+        },
+        {
+          path: "/instamart",
+          element: (
+            <Suspense fallback={<Shimmer />}>
+              <Instamart />
+            </Suspense>
+          ),
+        },
+        { path: "/cart", element: <Cart /> },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <AppLayout />,
-    errorElement: <Error />,
-    children: [
-      {
-        path: "/",
-        element: <Body />,
-      },
-      {
-        path: "/about",
-        element: (
-          <Suspense fallback={<h1>Loading...</h1>}>
-            <About />
-          </Suspense>
-        ),
-        children: [
-          {
-            path: "profile",
-            element: <Profile />,
-          },
-        ],
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/restaurant/:id",
-        element: <RestaurantMenu />,
-      },
-      {
-        path: "/instamart",
-        element: (
-          <Suspense fallback={<Shimmer />}>
-            <Instamart />
-          </Suspense>
-        ),
-      },
-      { path: "/cart", element: <Cart /> },
-    ],
-  },
-]);
+    future: {
+      v7_startTransition: true,
+      v7_relativeSplatPath: true,
+      v7_fetcherPersist: true,
+      v7_normalizeFormMethod: true,
+      v7_partialHydration: true,
+      v7_skipActionErrorRevalidation: true,
+    },
+  }
+);
 
 root.render(<RouterProvider router={appRouter} />);

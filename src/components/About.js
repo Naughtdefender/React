@@ -1,4 +1,4 @@
-import Profile from "./ProficeClass";
+import Profile from "./ProfileClass.js";
 import { Component } from "react";
 import UserContext from "../utils/UserContext";
 const About2 = function () {
